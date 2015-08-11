@@ -5749,6 +5749,8 @@ body.home {
   background: url(../images/HomeMobileBG.jpg);
   font-family: "Open Sans", sans-serif;
   font-weight: 400; }
+  body.home .container {
+    padding-right: 20px; }
   body.home h1 {
     font-size: 40px;
     font-size: 4rem;
@@ -5825,7 +5827,7 @@ body.home {
       background: #1f4d69; }
     body.home .navbar-default .navbar-toggle {
       border: 0;
-      margin-right: 0; }
+      margin-right: 15px; }
       body.home .navbar-default .navbar-toggle:hover, body.home .navbar-default .navbar-toggle:focus {
         background-color: transparent; }
     body.home .navbar-default .navbar-nav > li > a {
@@ -5839,9 +5841,8 @@ body.home {
     body.home .services li {
       display: inline-block;
       background: #1f4d69 url(../images/bgGrid.jpg);
-      width: 33%;
-      margin: 0 -1px 1px 0;
-      border: 1px solid rgba(255, 255, 255, 0.5); }
+      width: 49%;
+      margin: 0 -1px 1px 0; }
     body.home .services a {
       color: #ffffff;
       font-weight: 400;
@@ -5849,7 +5850,8 @@ body.home {
       text-align: center;
       display: block;
       font-size: 18px;
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      border: 1px solid rgba(255, 255, 255, 0.5); }
       body.home .services a:hover {
         background: #1f4d69 url(../images/bgGridHover.jpg);
         text-decoration: none; }
@@ -5889,7 +5891,7 @@ body.home {
       padding: 0; }
       body.home .adspace .col-md-6.tab-content {
         margin-left: -5px;
-        width: 50.58%; }
+        width: 100%; }
     body.home .adspace p {
       color: #ffffff;
       margin: 0 30px;
@@ -5908,7 +5910,7 @@ body.home {
     margin-right: 5px; }
   body.home #tabs li a {
     font-family: "Open Sans", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     color: #fff;
     padding: 7px 14px 6px 12px;
     display: block;
@@ -6224,7 +6226,7 @@ section.home-section {
 
 @media (min-width: 1200px) {
   body.home {
-    background: url(../images/HomeBG.jpg) no-repeat center 870px; }
+    background: url(../images/HomeBG.jpg) no-repeat center 825px; }
     body.home.home .module-small {
       margin-top: 40px; }
     body.home nav {
@@ -6289,6 +6291,14 @@ section.home-section {
       margin: 0 15px 0 -20px; }
     body.home .adspace {
       margin-top: 105px; }
+      body.home .adspace .col-md-6 {
+        padding: 0; }
+        body.home .adspace .col-md-6.tab-content {
+          margin-left: -5px;
+          width: 50.58%;
+          margin-bottom: -10px; }
+    body.home #tabs li a {
+      font-size: 13px; }
     body.home .left-column, body.home .middle-column, body.home .right-column {
       display: inline-block;
       vertical-align: top; }

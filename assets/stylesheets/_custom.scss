@@ -22,6 +22,9 @@ body.home {
     background: url(../images/HomeMobileBG.jpg);
     font-family: $font;
     font-weight: 400;
+    .container {
+        padding-right: 20px;
+    }
     h1 {
         @include font-size(4.0);
         text-transform: uppercase;
@@ -106,7 +109,7 @@ header {
     }
     .navbar-toggle {
         border: 0;
-        margin-right: 0;
+        margin-right: 15px;
         &:hover, &:focus {
             background-color: transparent;
         }
@@ -125,9 +128,9 @@ header {
     li {
         display: inline-block;
         background: $dkBlue url(../images/bgGrid.jpg);
-        width: 33%;
+        width: 49%;
         margin: 0 -1px 1px 0;
-        border: 1px solid rgba(255,255,255,.5);
+        
     }
     a {
         color: $white;
@@ -136,6 +139,7 @@ header {
         text-align: center;
         display: block;
         @include font-size(1.8);
+        border: 1px solid rgba(255,255,255,.5);
         &:hover {
             background: $dkBlue url(../images/bgGridHover.jpg);
             text-decoration: none;
@@ -183,7 +187,7 @@ header {
         padding: 0;
         &.tab-content {
             margin-left: -5px;
-            width: 50.58%;
+            width: 100%;
         }
     }
     p {
@@ -209,7 +213,7 @@ header {
 }
 #tabs li a {
 	font-family: $font;
-	font-size:13px;
+	font-size:15px;
 	color:#fff;
 	padding:7px 14px 6px 12px;
 	display:block;
@@ -593,7 +597,7 @@ section.home-section {
 @media (min-width: 1200px) {
 
 body.home {
-    background: url(../images/HomeBG.jpg) no-repeat center 870px;
+    background: url(../images/HomeBG.jpg) no-repeat center 825px;
     &.home .module-small {
        margin-top: 40px;
     }
@@ -682,7 +686,18 @@ body.home {
   }
   .adspace {
       margin-top: 105px;
+      .col-md-6 {
+           padding: 0;
+           &.tab-content {
+             margin-left: -5px;
+             width: 50.58%;
+             margin-bottom: -10px;
+           }
+      }
   }
+    #tabs li a {
+        font-size: 13px
+    }   
   .left-column, .middle-column, .right-column {
       display: inline-block;
       vertical-align: top;
