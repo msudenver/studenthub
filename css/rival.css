@@ -20,7 +20,7 @@ html {
 
 body {
 	background: #fff;
-	font: 400 12px/1.8 "Lato", sans-serif;
+	font: 400 12px/1.8 "Open Sans", sans-serif;
 	color: #666;
 	-webkit-font-smoothing: antialiased;
 }
@@ -142,7 +142,7 @@ a,
 /* Forms */
 
 .form-control {
-	font-family: "Lato", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 11px;
@@ -174,7 +174,7 @@ a,
 
 .btn {
 	border-radius: 0;
-	font-family: "Lato", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 11px;
@@ -658,7 +658,7 @@ blockquote {
 }
 
 .font-alt {
-	font-family: "Lato", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color:#1f4c69;
@@ -698,7 +698,7 @@ Navbar
 	border: 0;
 	border-radius: 0;
 	z-index: 1000;
-	font-family: "Lato", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: 11px;
@@ -838,7 +838,7 @@ Home Section
 	position: relative;
 	background-color: #fff;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center bottom;
 	width: 100%;
 	z-index: 0;
 	-webkit-background-size: cover;

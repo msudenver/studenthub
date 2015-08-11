@@ -14,7 +14,7 @@ $dkBlue: #1f4d69;
 $red: #e2231a;
 $yellow: #f6ff07;
 $gray: #959595;
-$font: 'Lato', sans-serif;
+$font: 'Open Sans', sans-serif;
 
 
 //Mobile and Up Styles
@@ -29,10 +29,10 @@ body.home {
         line-height: .8;
         margin: 0 0 0 40px;
         color: $white;
-        font-weight: 900;
+        font-weight: 700;
     }
     h2 {
-        font-weight: 900; 
+        font-weight: 700; 
         @include font-size(2.2);
         text-transform: uppercase;
         color: $white;
@@ -55,6 +55,7 @@ body.home {
         text-transform: uppercase;
         margin: 8px 0 0; 
         color: $white;
+        text-shadow: 0 0 7px rgba(0,0,0,.45);
     }
     h3:before {
         display: inline-block;
@@ -67,7 +68,7 @@ body.home {
         vertical-align: middle;
     } 
     h4 {
-        font-weight: 700;
+        font-weight: 500;
         @include font-size(1.8);
         text-transform: uppercase;
         margin-bottom: 0;
@@ -75,7 +76,7 @@ body.home {
         width: 100%;
     }
 p {
-    font-weight: 700;
+    font-weight: 400;
     @include font-size(1.2);
 }
 header {
@@ -125,7 +126,8 @@ header {
         display: inline-block;
         background: $dkBlue url(../images/bgGrid.jpg);
         width: 33%;
-        margin: 0 -1px 1px 0
+        margin: 0 -1px 1px 0;
+        border: 1px solid rgba(255,255,255,.5);
     }
     a {
         color: $white;
@@ -134,6 +136,10 @@ header {
         text-align: center;
         display: block;
         @include font-size(1.8);
+        &:hover {
+            background: $dkBlue url(../images/bgGridHover.jpg);
+            text-decoration: none;
+        }
     }
 }
 .content {
@@ -146,6 +152,12 @@ header {
 	align-items: center;
     border-bottom: 1px solid rgba(255,255,255,0.7);
     min-height: 85px;
+    &:hover {
+        background: rgba(255,255,255,.15);
+    }
+    a:hover {
+        text-decoration: none;
+    }
 }
 .adspace {
     margin-top: 40px;
@@ -247,6 +259,9 @@ header {
         width: 100%; 
         border: 1px solid rgba(255,255,255,.5);
         padding: 6px;
+        &:hover {
+            background: rgba(255,255,255,0.1);
+        }
         .date {
             @include font-size(1.0);
             text-transform: uppercase;
@@ -276,10 +291,10 @@ header {
     opacity: .87;
     padding: 10px;
     color: $white;
-    min-height: 115px;
+    min-height: 130px;
 }
 .black {
-    background: $black;
+    background: rgba(43, 43, 43, .8);
     padding: 10px;
     color: $white;
 }
@@ -289,9 +304,16 @@ header {
     color: $white;
 }
 .red {
-    background: $red;
+    background: rgba(226,35,26, .9);
     padding: 10px;
     color: $white;
+    min-height: 115px; 
+}
+.two-rows {
+    min-height: 190px !important;    
+}
+.three-rows {
+    min-height: 275px !important;    
 }
 [class*="col-"] {
     padding: 0 2px;
@@ -517,9 +539,9 @@ section.home-section {
 @media (min-width: 1200px) {
 
 body.home {
-    background: url(../images/HomeBG.jpg) no-repeat center bottom;
+    background: url(../images/HomeBG.jpg) no-repeat center 870px;
     &.home .module-small {
-       margin-top: 350px;
+       margin-top: 40px;
     }
   nav {
       float: right;
