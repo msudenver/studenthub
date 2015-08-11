@@ -5747,7 +5747,7 @@ button.close {
     display: none !important; } }
 body.home {
   background: url(../images/HomeMobileBG.jpg);
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400; }
   body.home h1 {
     font-size: 40px;
@@ -5757,9 +5757,9 @@ body.home {
     line-height: .8;
     margin: 0 0 0 40px;
     color: #ffffff;
-    font-weight: 900; }
+    font-weight: 700; }
   body.home h2 {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 22px;
     font-size: 2.2rem;
     text-transform: uppercase;
@@ -5781,7 +5781,8 @@ body.home {
     font-size: 1.8rem;
     text-transform: uppercase;
     margin: 8px 0 0;
-    color: #ffffff; }
+    color: #ffffff;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.45); }
   body.home h3:before {
     display: inline-block;
     width: 57px;
@@ -5792,7 +5793,7 @@ body.home {
     margin: 0 8px 8px 0;
     vertical-align: middle; }
   body.home h4 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -5800,7 +5801,7 @@ body.home {
     display: block;
     width: 100%; }
   body.home p {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 12px;
     font-size: 1.2rem; }
   body.home header {
@@ -5839,7 +5840,8 @@ body.home {
       display: inline-block;
       background: #1f4d69 url(../images/bgGrid.jpg);
       width: 33%;
-      margin: 0 -1px 1px 0; }
+      margin: 0 -1px 1px 0;
+      border: 1px solid rgba(255, 255, 255, 0.5); }
     body.home .services a {
       color: #ffffff;
       font-weight: 400;
@@ -5848,6 +5850,9 @@ body.home {
       display: block;
       font-size: 18px;
       font-size: 1.8rem; }
+      body.home .services a:hover {
+        background: #1f4d69 url(../images/bgGridHover.jpg);
+        text-decoration: none; }
   body.home .content {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -5859,6 +5864,10 @@ body.home {
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     min-height: 85px; }
+    body.home .content:hover {
+      background: rgba(255, 255, 255, 0.15); }
+    body.home .content a:hover {
+      text-decoration: none; }
   body.home .adspace {
     margin-top: 40px;
     background-image: -webkit-linear-gradient(top, #273a48 0%, #1a2932 100%);
@@ -5928,7 +5937,7 @@ body.home {
       body.home .calendar .title .semester {
         text-transform: uppercase; }
       body.home .calendar .title .year {
-        font-family: "Lato", sans-serif;
+        font-family: "Open Sans", sans-serif;
         text-transform: uppercase;
         margin-right: 10px; }
       body.home .calendar .title a {
@@ -5946,6 +5955,8 @@ body.home {
       width: 100%;
       border: 1px solid rgba(255, 255, 255, 0.5);
       padding: 6px; }
+      body.home .calendar .day:hover {
+        background: rgba(255, 255, 255, 0.1); }
       body.home .calendar .day .date {
         font-size: 10px;
         font-size: 1rem;
@@ -5973,9 +5984,9 @@ body.home {
     opacity: .87;
     padding: 10px;
     color: #ffffff;
-    min-height: 115px; }
+    min-height: 130px; }
   body.home .black {
-    background: #2b2b2b;
+    background: rgba(43, 43, 43, 0.8);
     padding: 10px;
     color: #ffffff; }
   body.home .blue {
@@ -5983,9 +5994,14 @@ body.home {
     padding: 10px;
     color: #ffffff; }
   body.home .red {
-    background: #e2231a;
+    background: rgba(226, 35, 26, 0.9);
     padding: 10px;
-    color: #ffffff; }
+    color: #ffffff;
+    min-height: 115px; }
+  body.home .two-rows {
+    min-height: 190px !important; }
+  body.home .three-rows {
+    min-height: 275px !important; }
   body.home [class*="col-"] {
     padding: 0 2px; }
   body.home .left-column {
@@ -6168,9 +6184,9 @@ section.home-section {
 
 @media (min-width: 1200px) {
   body.home {
-    background: url(../images/HomeBG.jpg) no-repeat center bottom; }
+    background: url(../images/HomeBG.jpg) no-repeat center 870px; }
     body.home.home .module-small {
-      margin-top: 350px; }
+      margin-top: 40px; }
     body.home nav {
       float: right;
       max-width: 1024px;
