@@ -5869,13 +5869,8 @@ body.home {
     body.home .content a:hover {
       text-decoration: none; }
   body.home .adspace {
-    margin-top: 40px;
-    background-image: -webkit-linear-gradient(top, #273a48 0%, #1a2932 100%);
-    background-image: linear-gradient(to bottom, #273a48 0%, #1a2932 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF273A48', endColorstr='#FF1A2932', GradientType=0);
-    padding: 10px 0;
-    border-bottom: 10px solid rgba(255, 255, 255, 0.2); }
+    position: relative;
+    padding: 10px 0; }
     body.home .adspace img {
       max-width: 100%; }
     body.home .adspace h3 {
@@ -5885,6 +5880,16 @@ body.home {
       font-size: 2.3rem; }
       body.home .adspace h3:before {
         display: none; }
+    body.home .adspace .row {
+      margin-right: -2px;
+      margin-left: -40px;
+      position: absolute;
+      bottom: -1px; }
+    body.home .adspace .col-md-6 {
+      padding: 0; }
+      body.home .adspace .col-md-6.tab-content {
+        margin-left: -5px;
+        width: 50.58%; }
     body.home .adspace p {
       color: #ffffff;
       margin: 0 30px;
@@ -5898,6 +5903,41 @@ body.home {
         color: #ffffff; }
         body.home .adspace p a:hover {
           text-decoration: none; }
+  body.home #tabs li {
+    list-style: none;
+    margin-right: 5px; }
+  body.home #tabs li a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    color: #fff;
+    padding: 7px 14px 6px 12px;
+    display: block;
+    background: rgba(232, 139, 56, 0.8);
+    text-decoration: none;
+    border-top: 3px solid #d35400;
+    border-bottom: 3px solid #d35400;
+    outline: none;
+    text-transform: uppercase; }
+  body.home #tabs li a.inactive {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #cccccc;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 2px solid #2b2b2b;
+    border-bottom: none; }
+  body.home #tabs li a:hover {
+    color: rgba(255, 255, 255, 0.8); }
+  body.home #tabs li a.inactive:hover {
+    color: #d35400; }
+  body.home .tab-container {
+    background: rgba(232, 139, 56, 0.8);
+    padding: 10px;
+    color: #fff;
+    min-height: 151px;
+    border-top: 3px solid #d35400;
+    border-bottom: 3px solid #d35400; }
+    body.home .tab-container a {
+      color: #fff; }
   body.home .social {
     padding: 0;
     margin: 35px 0; }
