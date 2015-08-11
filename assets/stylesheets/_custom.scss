@@ -539,7 +539,9 @@ section.home-section {
 @media (min-width: 1200px) {
 
 body.home {
-    background: url(../images/HomeBG.jpg) no-repeat center 870px;
+    background: url(../images/HomeBG.jpg) no-repeat ;
+    background-size: cover;
+    width: 100%;
     &.home .module-small {
        margin-top: 40px;
     }
