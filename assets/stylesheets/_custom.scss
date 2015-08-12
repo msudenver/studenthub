@@ -301,17 +301,28 @@ header {
     background: rgba(43, 43, 43, .8);
     padding: 10px;
     color: $white;
+    min-height: 115px;
+    &:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
 }
 .blue {
     background: $blue;
     padding: 10px;
     color: $white;
+    min-height: 115px;
+    &:hover {
+        background: rgb(34, 123, 170);
+    }
 }
 .red {
     background: rgba(226,35,26, .9);
     padding: 10px;
     color: $white;
     min-height: 115px; 
+    &:hover {
+        background: rgba(191, 31, 23, 0.9);
+    }
 }
 .two-rows {
     min-height: 190px !important;    
@@ -333,6 +344,9 @@ header {
     }
     .purple {
           background: rgba(126,54,99,.87);
+    }
+    .red {
+        background: rgba(226,35,26, .9);
     }
 }
 .middle-column {
