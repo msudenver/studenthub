@@ -7321,7 +7321,11 @@ button.close {
 }
 body.home {
   background: url(../images/HomeMobileBG.jpg);
-  font-family: "Open Sans", sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 body.home h1 {
@@ -7402,8 +7406,6 @@ body.home header .mainLogo {
 body.home .navbar-default {
   background: transparent;
   border: none;
-  width: 109%;
-  margin-left: -15px;
 }
 body.home .navbar-default .navbar-header {
   background: #1f4d69;
@@ -7457,7 +7459,6 @@ body.home .content {
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   min-height: 85px;
 }
 body.home .content:hover {
@@ -7555,7 +7556,7 @@ body.home .calendar .title .semester {
   text-transform: uppercase;
 }
 body.home .calendar .title .year {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   margin-right: 10px;
 }
@@ -7610,17 +7611,25 @@ body.home .purple {
   opacity: .87;
   padding: 10px;
   color: #ffffff;
-  min-height: 130px;
+  min-height: 115px;
 }
 body.home .black {
   background: rgba(43, 43, 43, 0.8);
   padding: 10px;
   color: #ffffff;
+  min-height: 115px;
+}
+body.home .black:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 body.home .blue {
   background: #2897d1;
   padding: 10px;
   color: #ffffff;
+  min-height: 115px;
+}
+body.home .blue:hover {
+  background: #227baa;
 }
 body.home .red {
   background: rgba(226, 35, 26, 0.9);
@@ -7628,14 +7637,11 @@ body.home .red {
   color: #ffffff;
   min-height: 115px;
 }
+body.home .red:hover {
+  background: rgba(191, 31, 23, 0.9);
+}
 body.home .two-rows {
   min-height: 190px !important;
-}
-body.home .three-rows {
-  min-height: 275px !important;
-}
-body.home [class*="col-"] {
-  padding: 0 2px;
 }
 body.home .left-column {
   text-align: center;
@@ -7650,6 +7656,9 @@ body.home .left-column .blue {
 body.home .left-column .purple {
   background: rgba(126, 54, 99, 0.87);
 }
+body.home .left-column .red {
+  background: rgba(226, 35, 26, 0.9);
+}
 body.home .middle-column a {
   font-weight: 400;
   font-size: 18px;
@@ -7660,8 +7669,17 @@ body.home .middle-column a {
   width: 100%;
   color: #ffffff;
 }
-body.home .right-column {
-  display: none;
+body.home .middle-column .black {
+  min-height: 115px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+body.home .middle-column .blue {
+  min-height: 115px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+body.home .middle-column .red {
+  min-height: 115px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 body.home .module-small {
@@ -7858,9 +7876,16 @@ section.home-section {
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  [class*="col-"] {
+    padding: 0 2px;
+  }
+}
 @media (min-width: 1200px) {
   body.home {
-    background: url(../images/HomeBG.jpg) no-repeat;
+    background: url(../images/HomeBG.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
   }
@@ -7954,31 +7979,16 @@ section.home-section {
     vertical-align: top;
   }
   body.home .left-column {
-    width: 26%;
     text-align: right;
   }
   body.home .left-column .black {
-    min-height: 275px;
+    min-height: 115px;
   }
   body.home .left-column .blue {
-    min-height: 190px;
+    min-height: 115px;
   }
-  body.home .middle-column {
-    width: 57.5%;
-  }
-  body.home .right-column {
-    width: 15.9%;
-  }
-  body.home .right-column .blue {
-    min-height: 190px;
-    background: rgba(40, 151, 209, 0.87);
-  }
-  body.home .right-column .black {
-    min-height: 275px;
-    background: rgba(43, 43, 43, 0.87);
-  }
-  body.home .right-column .purple {
-    background: rgba(126, 54, 99, 0.87);
+  body.home .left-column .red {
+    min-height: 115px;
   }
   body.home .widget {
     margin-bottom: 0px;
