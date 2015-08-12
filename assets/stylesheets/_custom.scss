@@ -345,6 +345,19 @@ header {
         width: 100%;  
         color: $white;
     }
+      .black {
+          min-height: 115px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+          
+      }
+      .blue {
+          min-height: 115px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+      }
+      .red {
+          min-height: 115px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+      }
 }
 //.right-column {
 //    display: none;
@@ -657,15 +670,7 @@ body.home {
   .right-column {
       width: 15.9%;
       .blue {
-          min-height: 190px;
-          background: rgba(40,151,209,.87);
-      }
-      .black { 
-          min-height: 275px;
-          background: rgba(43,43,43,.87); 
-      }
-      .purple {
-          background: rgba(126,54,99,.87);
+          min-height: 115px;
       }
   }
   .widget {
