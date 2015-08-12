@@ -295,7 +295,7 @@ header {
     opacity: .87;
     padding: 10px;
     color: $white;
-    min-height: 130px;
+    min-height: 115px;
 }
 .black {
     background: rgba(43, 43, 43, .8);
@@ -570,7 +570,6 @@ section.home-section {
 
 // Desktop Media Query
 @media (min-width: 1200px) {
-
 body.home {
     background: url(../images/HomeBG.jpg) ;
     background-repeat: no-repeat;
@@ -673,11 +672,12 @@ body.home {
   .left-column {
       text-align: right;
       .black {
+          min-height: 115px;
       }
       .blue {
-          min-height: 190px;
+          min-height: 115px;
       }
-      .blue {
+      .red {
           min-height: 115px;
       }
   }
