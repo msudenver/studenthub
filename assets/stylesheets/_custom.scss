@@ -330,9 +330,6 @@ header {
 //.three-rows {
 //    min-height: 275px !important;    
 //}
-[class*="col-"] {
-    padding: 0 2px;
-}
 .left-column {
     text-align: center;
     text-transform: uppercase;
@@ -564,7 +561,12 @@ section.home-section {
     margin: 0;
 }
 
-
+// Small Devices to Large Devices Media Query
+@media (min-width: 768px) {
+[class*="col-"] {
+    padding: 0 2px;
+    }
+}
 
 // Desktop Media Query
 @media (min-width: 1200px) {
