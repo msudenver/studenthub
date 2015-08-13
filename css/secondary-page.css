@@ -1,0 +1,140 @@
+/* body */
+body {
+	background: #fff;
+	font: "Lato", sans-serif;
+	color: #666;
+	-webkit-font-smoothing: antialiased;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+    color: #fff;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* header */
+
+#header {
+    background-image: url(/images/header_image.png);
+    background-repeat: no-repeat;
+      -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.msudenver_logo {
+    width: 200px;
+}
+
+a.breadcrumbs {
+    color: #006a93;
+}
+
+.breadcrumbs {
+    text-transform: uppercase;
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+.navlinks {
+    text-align: right;
+}
+
+.studenthub {
+    float: left;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 80%;
+    margin: 70px 0 0 40px;
+
+}
+
+
+
+.sectiontitle {
+    color: #fff;
+    float: right;
+    font: 400 48px "Open Sans", sans-serif;
+    margin: 70px 0 0 40px;
+}
+
+sectiontitle {
+    color: #fff;
+    
+}
+
+li.toplinks {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+li.toplinks-social {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+/* modules */
+
+
+/* content */
+
+h1 {
+    color: #fff;
+}
+
+
+/* footer */
+
+.footer {
+	padding: 10px 10px 10px 10px;
+    color: white;
+}
+
+a.footer {
+    color: #fff;
+}
+
+
+.copyright {
+	margin: 0;
+}
+
+.footer-social-links {
+	text-align: right;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.footer-social-links a {
+	display: inline-block;
+	padding: 0 6px;
+    
+}
+
+.bg-dark {
+    background: #111;
+}
