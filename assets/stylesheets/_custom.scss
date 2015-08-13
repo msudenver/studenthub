@@ -19,7 +19,7 @@ $font: 'Lato', sans-serif;
 
 //Mobile and Up Styles
 body.home {
-    background: url(../images/HomeMobileBG.jpg);
+    background: url(../images/Campus-Background-comp.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -626,7 +626,7 @@ section.home-section {
 // Desktop Media Query
 @media (min-width: 1200px) {
 body.home {
-    background: url(../images/HomeBG.jpg) ;
+    background: url(../images/Campus-Background-comp.jpg) bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
