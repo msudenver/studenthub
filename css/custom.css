@@ -148,7 +148,7 @@ body.home .services a {
 }
 
 body.home .services a:hover {
-  background: #1f4d69 url(../images/bgGridHover.jpg);
+  background: #1f4d69;
   text-decoration: none;
 }
 
@@ -739,7 +739,7 @@ section.home-section {
   }
   body.home .navbar-default .navbar-nav > li > a {
     color: #ffffff;
-    padding: 0;
+    padding: 5px;
   }
   body.home .navbar-default .navbar-nav > li > a:hover {
     color: #ffffff;
@@ -800,8 +800,5 @@ section.home-section {
   }
   body.home .left-column .red {
     min-height: 115px;
-  }
-  body.home .widget {
-    margin-bottom: 0px;
   }
 }

@@ -141,7 +141,7 @@ header {
         display: block;
         @include font-size(1.8);
         &:hover {
-            background: $dkBlue url(../images/bgGridHover.jpg);
+            background: $dkBlue;
             text-decoration: none;
         }
     }
@@ -666,7 +666,7 @@ body.home {
       }
       .navbar-nav > li > a {
           color: $white;
-          padding: 0;
+          padding: 5px;
           &:hover {
               color: $white;
               text-decoration: underline;
@@ -737,8 +737,8 @@ body.home {
           min-height: 115px;
       }
   }
-  .widget {
-    margin-bottom: 0px;
-  }
+//  .widget {
+//    margin-bottom: 0px;
+//  }
 }
 }
