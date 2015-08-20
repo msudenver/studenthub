@@ -315,7 +315,7 @@ header {
     .day {
         display: inline-block;
         vertical-align: top;
-        width: 100%; 
+        //width: 100%; 
         border: 1px solid rgba(255,255,255,.5);
         padding: 6px;
         &:hover {
@@ -635,10 +635,10 @@ body.home {
        margin-top: 40px;
     }
   nav {
-      float: right;
-      max-width: 1024px;
+      //float: right;
+      //max-width: 1024px;
       margin: 0 auto; 
-      padding-top: 40px;
+      padding-top: 30px;
       ul {
           li {
               display: inline-block;
@@ -673,11 +673,12 @@ body.home {
           }
       }
   }
-  .container {
-    width: 1024px;
-  }
+//  .container {
+//    width: 1024px;
+//  }
   .container-fluid {
-    padding-right: 0;      
+   padding-right: 0;
+   padding-left: 0;       
   }
   .social {
     padding: 0;
@@ -697,15 +698,15 @@ body.home {
       margin: 15px 0;
   }
   .mainLogo {
-      margin-top: -50px;    
+      margin-top: -20px;    
   }
   .services {
     width: 90%;
   }
   .calendar {
       .day {
-        width: 13.95%; 
-        margin-right: -5px;  
+        //width: 13.95%; 
+        //margin-right: -5px;  
       }
       .title:before {
             display: inline-block;
