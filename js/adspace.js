@@ -5,10 +5,20 @@ $(document).ready(function() {
     
     $('#tabs li a').click(function(){
         var t = $(this).attr('href');
-        $('#tabs li a').addClass('inactive');
-        $(this).removeClass('inactive');
-        $('.tab-container').hide();
-        $(t).fadeIn('slow');
+        var p = $(this).data('image');
+        
+        if ($(this).hasClass('inactive')) {
+            $('#tabs li a').addClass('inactive');
+            $(this).removeClass('inactive');
+            $('.tab-container').hide();
+            $(t).fadeIn('slow');
+
+            $('.ad-image').fadeOut( 'fast', function() {
+                $('.ad-image').attr('src', 'images/' + p );
+                $('.ad-image').fadeIn('fast');
+            });
+        }
+        
         return false;
     });
 });
