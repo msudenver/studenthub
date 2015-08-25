@@ -621,13 +621,15 @@ section.home-section {
 
 // Small Devices to Large Devices Media Query
 @media (min-width: 768px) {
+
+
+// Desktop Media Query
+@media (min-width: 768px) {
 [class*="col-"] {
     padding: 0 2px;
     }
-}
-
-// Desktop Media Query
-@media (min-width: 1200px) {
+}    
+    
 body.home {
     background: url(../images/Campus-Background-comp.jpg) bottom;
     background-repeat: no-repeat;
@@ -700,7 +702,7 @@ body.home {
       margin: 15px 0;
   }
   .mainLogo {
-      margin-top: -20px;    
+      margin-top: -70px;    
   }
   .services {
     width: 90%;
