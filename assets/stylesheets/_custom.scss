@@ -724,18 +724,12 @@ body.home {
   .promospace {
       margin-top: 50px;
     .row {
-       margin-right: -2px;
-        position: absolute;
-        bottom: 8px;
-        margin-top: 0;
+        margin-left:0;
+        margin-right: 0;
+        margin-top: -30%;
     }
       .col-md-6 {
-            padding: 0 5px 0 0;
-            &.tab-content {
-                margin-left: -5px;
-                width: 50.58%;
-                padding-right: 0px;
-            }
+            padding: 0;
         }
   }
   .left-column, .middle-column, .right-column {
