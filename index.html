@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,600,700,300' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/custom.css" rel="stylesheet">
+    <t4 type="media" id="95621"/>  
+    <link href="css/custom.css" rel="stylesheet">
+    <t4 type="media" id="95566"/><!--custom.css-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,15 +21,19 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="home">
-    
-    <header>
-        <div class="container">
-         <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
+  <body class="home"> 
+      <!-- PRELOADER -->
+<!--
+	<div class="page-loader">
+		<div class="loader">Loading...</div>
+	</div>
+-->
+    <header style="background: url(images/skater.jpg) no-repeat; background-size: cover; width: 100%;">
+<!--          <header style="background: url( <t4 type="media" id="95993" formatter="image/path" />) no-repeat; background-size: cover; width: 100%;">-->
+        <nav class="navbar navbar-default">
+          <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-tools" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -36,49 +42,83 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="main-tools">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">A - Z</a></li>
                 <li><a href="#">Library</a></li>
                 <li><a href="#">Maps</a></li>
                 <li><a href="#">Faculty & Staff</a></li>
+                <li>
+              <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#search-field" aria-expanded="false" aria-controls="nav-collapse3"><i class="fa fa-search"></i> Search</a>
+            </li>  
              </ul>
+                
+                <div class="collapse nav navbar-nav nav-collapse slide-down" id="search-field">
+            <form class="navbar-form " role="search" action="https://www.msudenver.edu/a_to_z/search">
+            <input type="hidden" name="cx" value="004867254463714202705:1ammfpknuzw">
+            <input type="hidden" name="cof" value="FORID:11">
+            <input type="hidden" name="ie" value="UTF-8">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i> Seach</button>
+            </div>
+        </div>
+        </form>
+          </div>
+
+                <!--
+                <div class="col-sm-3 col-md-3">
+        <form class="navbar-form " role="search" action="https://www.msudenver.edu/a_to_z/search">
+            <input type="hidden" name="cx" value="004867254463714202705:1ammfpknuzw">
+            <input type="hidden" name="cof" value="FORID:11">
+            <input type="hidden" name="ie" value="UTF-8">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i> Seach</button>
+            </div>
+        </div>
+        </form>
+    </div>-->
+               
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
-           <div class="row">
-              <div class="col-md-7">
+        <div class="container-fluid">
+            <section class="row">
+              <div class="col-sm-12 col-md-7 col-lg-4 col-lg-push-2">
                   <img src="images/mainLogo.png" class="mainLogo"/>
                   <span class="title"><h1>Student Hub</h1></span>
-                  <h2>My Services</h2>
+                  <h2>Web Services</h2>
                   <ul class="services">
-                      <li><a href="#">Pay Tuition</a></li>
-                      <li><a href="#">Register</a></li>
-                      <li><a href="#">CAPP Report</a></li>
-                      <li><a href="#">Email/Calendar</a></li>
+                      <li><a href="#">Email</a></li>
                       <li><a href="#">Blackboard</a></li>
+                      <li><a href="#">Register</a></li>
+                      <li><a href="#">Pay Tuition</a></li>
+                      <li><a href="#">CAPP Report</a></li>
                   </ul>
                   <h2>Course Info</h2>
                   <ul class="services">
-                      <li><a href="#">Pay Tuition</a></li>
-                      <li><a href="#">Register</a></li>
-                      <li><a href="#">CAPP Report</a></li>
-                      <li><a href="#">Email/Calendar</a></li>
-                      <li><a href="#">Blackboard</a></li>
+                      <li><a href="#">University Catalog</a></li>
+                      <li><a href="#">Final Exams</a></li>
+                      <li><a href="#">Grades</a></li>
+                      <li><a href="#">Class Schedules</a></li>
+                      <li><a href="#">Holds</a></li>
                   </ul>
               </div><!-- .col-md-7 -->
-              <div class="col-md-5">
-                 <div class="adspace">
-                  <img class="img-responsive" src="images/1_trainer.png"/>
-                     <div class="row">
-                      <div class="col-md-6">
+            <div class="col-sm-12 col-md-5 col-lg-4 col-lg-push-2">
+                 <div class="promospace">
+                  <img src="images/promo-1.png" class="ad-image"/>
+                  <div class="row">
+                      <div class="col-sm-12 col-md-6">
                           <ul id="tabs">
-                              <li><a href="#tab1">Capp Report Vs. Degree Works?</a></li>
-                              <li><a href="#tab2">Save 6K In Tuition This Year</a></li>
-                              <li><a href="#tab3">Welcome, Fall Students</a></li>
+                              <li><a href="#tab1" data-image="promo-1.png">Capp Report Vs. Degree Works?</a></li>
+                              <li><a href="#tab2" data-image="promo-2.png">Save 6K In Tuition This Year</a></li>
+                              <li><a href="#tab3" data-image="promo-3.png">Welcome, Fall Students</a></li>
                           </ul>
                       </div><!-- .col-md-6 -->
-                      <div class="col-md-6 tab-content">
+                      <div class="col-sm-12 col-md-6 tab-content">
                           <div class="tab-container" id="tab1">
                         <a href="#">Macenous rhoncus magna leo, at mollis nisl tempor et.  Morbi vel leo vestibulum, sollictudin justo blandit.  Magna leo, at mollis nisl tempor et.</a>
                     </div>
@@ -89,7 +129,7 @@
                         Morbi vel leo vestibulum, sollictudin justo blandit. Macenous rhoncus magna leo, at mollis nisl tempor et.
                     </div>
                       </div><!-- .col-md-6 -->
-                 </div><!-- .row --> 
+                 </div><!-- .row -->    
                  </div><!-- .adspace -->
                  <ul class="social">
                      <li><a href="#" class="twitter"></a></li>
@@ -99,48 +139,48 @@
                      <li><a href="#" class="instagram"></a></li>
                  </ul>
               </div><!-- .col-md-5 -->      
-           </div>
+            </section>
+            <section class="row">
+            <div class="col-md-12 col-lg-8 col-lg-push-2">    
            <div class="calendar">
-              <div class="title"><span class="main">Dates and Deadlines:</span> <span class="semester">Spring Semester</span> <span class="year">2015</span><a href="#">Go to Full Calendar</a></div>
-              <div class="day">
+              <div class="title"><span class="main">DATES AND DEADLINES:</span> <span class="semester">Spring Semester</span> <span class="year">2015</span><a href="#">Go to Full Calendar</a></div>
+              <div class="col-sm-6 col-md-2 day">
                   <span class="date">Sun - Apr 5 | 12PM</span>
                   <span class="event">Graduate Cap and gown order closes</span>
                   <a href="#">Details Here</a>
               </div><!-- .day -->
-              <div class="day">
+              <div class="col-sm-6 col-md-2 day">
                   <span class="date">Sun - Apr 5 | 12PM</span>
                   <span class="event">Graduate Cap and gown order closes</span>
                   <a href="#">Details Here</a>
               </div><!-- .day -->
-              <div class="day">
+              <div class="col-sm-6 col-md-2 day">
                   <span class="date">Sun - Apr 5 | 12PM</span>
                   <span class="event">Graduate Cap and gown order closes</span>
                   <a href="#">Details Here</a>
               </div><!-- .day -->
-              <div class="day">
+              <div class="col-sm-6 col-md-2 day">
                   <span class="date">Sun - Apr 5 | 12PM</span>
                   <span class="event">Graduate Cap and gown order closes</span>
                   <a href="#">Details Here</a>
               </div><!-- .day -->
-              <div class="day">
+              <div class="col-sm-6 col-md-2 day">
                   <span class="date">Sun - Apr 5 | 12PM</span>
                   <span class="event">Graduate Cap and gown order closes</span>
                   <a href="#">Details Here</a>
               </div><!-- .day -->
-              <div class="day">
-                  <span class="date">Sun - Apr 5 | 12PM</span>
-                  <span class="event">Graduate Cap and gown order closes</span>
-                  <a href="#">Details Here</a>
-              </div><!-- .day -->
-              <div class="day">
+              <div class="col-sm-6 col-md-2 day">
                   <span class="date">Sun - Apr 5 | 12PM</span>
                   <span class="event">Graduate Cap and gown order closes</span>
                   <a href="#">Details Here</a>
               </div><!-- .day --> 
           </div><!-- .calendar -->
+                </div>
+            </section>    
         </div><!-- .content -->
     </header>
     
+<div class="container-fluid"  > 
     <section class="row">
         <div class="col-xs-3 col-sm-3 col-md-3 left-column">
            <div class="red">
@@ -228,33 +268,33 @@
                     </div><!-- .col-md-4 -->
             
                         <div class="col-xs-12 col-sm-6 col-md-4">
-                       <div class="blue content">
-                               <a href="#" class="text-center">First Year Success</a>
+                       <div class="blue content text-center">
+                               <a href="#">First Year Success</a>
                        </div>
                     </div><!-- .col-md-4 -->
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                       <div class="blue content">
-                               <a href="#" class="text-center">Writing Center</a>
+                       <div class="blue content text-center">
+                               <a href="#">Writing Center</a>
                        </div>
                     </div><!-- .col-md-4 -->
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                       <div class="blue content">
-                               <a href="#" class="text-center">Tutoring</a>
+                       <div class="blue content text-center">
+                               <a href="#">Tutoring</a>
                        </div>
                     </div><!-- .col-md-4 -->
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                       <div class="blue content">
-                               <a href="#" class="text-center">Student Academic Success</a>
+                       <div class="blue content text-center">
+                               <a href="#">Student Academic Success</a>
                        </div>
                     </div><!-- .col-md-4 -->
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                       <div class="blue content">
-                               <a href="#" class="text-center">Access Center</a>
+                       <div class="blue content text-center">
+                               <a href="#">Access Center</a>
                        </div>
                     </div><!-- .col-md-4 --> 
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                       <div class="blue content">
-                               <a href="#" class="text-center">Child Care</a>
+                       <div class="blue content text-center">
+                               <a href="#">Child Care</a>
                        </div>
                     </div><!-- .col-md-4 --> 
         </div><!-- .middle-column -->
@@ -543,7 +583,7 @@
                     </div><!-- .col-md-4 --> 
         </div><!-- .middle-column -->
     </section>
-        <section class="row">
+    <section class="row">
         <div class="col-xs-3 col-sm-3 col-md-3 left-column">
            <div class="red">
                <h3>Graduation Services</h3>
@@ -570,7 +610,7 @@
         </div><!-- .middle-column -->
     </section>
     
-
+</div>   
 		<!-- Footer start -->
 		<footer class="footer bg-dark">
 			<div class="container">
@@ -578,17 +618,16 @@
 				<div class="row">
 	
 					<div class="col-sm-6">
-						<p class="copyright font-alt">© 2015 <a href="index.html">Metropolitan State University of Denver</a><br /> official legal statements go here </p>
+						<p class="copyright font-alt">© 2015 <a href="index.html">Metropolitan State University of Denver</a></p>
+                        <p><a href="#" class="nav-links">College Portrait Privacy Statement</a>  |  <a href="#" class="nav-links">Colorado TOPS</a> </p>
+
 					</div>
-	
-					<div class="col-sm-6">
-						<div class="footer-social-links">
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-flickr"></i></a>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
-						</div>
+                    
+                    <div class="col-sm-6">
+						<p class="footer">
+                            <a href="#" class="nav-links">CONTACT US</a> | 303-556-5740 
+                            <br>Auraria Campus Police: 303-556-5000 
+                            <br>Inclement Weather Line: 303-556-2401</p>
 					</div>
 	
 				</div><!-- .row -->
@@ -603,6 +642,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/javascripts/bootstrap.min.js"></script>
-    <script src="js/adspace.js"></script>
+    <t4 type="media" id="95575"/><!--bootstrap.min.js-->
+<!--    <script src="js/custom.js"></script>  -->
+    <script src="js/promospace.js"></script>
+    <t4 type="media" id="95577"/><!--adspace.js-->
   </body>
 </html>

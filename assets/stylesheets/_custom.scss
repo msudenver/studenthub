@@ -1,3 +1,5 @@
+@import "search-bar";
+
 // Mixins 
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
@@ -19,13 +21,14 @@ $font: 'Lato', sans-serif;
 
 //Mobile and Up Styles
 body.home {
-    background: url(../images/Campus-Background-comp.jpg);
+    background: url(../images/Campus-Background-mobile.jpg) bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
     font-family: $font;
     font-weight: 400;
+
     h1 {
         @include font-size(4.0);
         text-transform: uppercase;
@@ -84,9 +87,9 @@ p {
     @include font-size(1.2);
 }
 header {
-    background: url(../images/skater.jpg) no-repeat;
-    background-size: cover;
-    width: 100%;
+    //background: url(../images/skater.jpg) no-repeat;
+    //background-size: cover;
+    //width: 100%;
     .title {
         width: 60%;
         display: inline-block;
@@ -141,7 +144,7 @@ header {
         display: block;
         @include font-size(1.8);
         &:hover {
-            background: $dkBlue url(../images/bgGridHover.jpg);
+            background: $dkBlue;
             text-decoration: none;
         }
     }
@@ -163,7 +166,7 @@ header {
         text-decoration: none;
     }
 }
-.adspace {
+.promospace {
     position: relative;
     padding: 10px 0;
     img {
@@ -178,17 +181,13 @@ header {
         }
     }
     .row {
-       margin-right: -2px;
-        margin-left: -40px;
-        position: absolute;
-        bottom: -1px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -30%;
     }
     .col-md-6 {
         padding: 0;
-        &.tab-content {
-            margin-left: -5px;
-            width: 50.58%;
-        }
+
     }
     p {
         color: $white;
@@ -207,49 +206,52 @@ header {
     }
 }
     
-#tabs li {
-	
-	list-style:none;
-	margin-right:5px;
-}
-#tabs li a {
-	font-family: $font;
-	font-size:13px;
-	color:#fff;
-	padding:7px 14px 6px 12px;
-	display:block;
-	background: rgba(232,139,56,.8);
-	text-decoration:none;
-	border-top: 3px solid #d35400;
-    border-bottom: 3px solid #d35400;
-	outline:none;
-    text-transform: uppercase;
-}
-#tabs li a.inactive{
-	padding-top:5px;
-	padding-bottom:5px;
-    color:#cccccc;
-	background: rgba(0,0,0,.6);
-    border-top: 2px solid $black;
-    border-bottom: none;
-}
-#tabs li a:hover {
-	color: rgba(255,255,255,.8);
-}
-#tabs li a.inactive:hover {
-	color:#d35400;
+#tabs {
+    padding: 0;
+    margin-bottom: 0px;
+    li {
+	    list-style:none;
+
+        a {
+            font-family: $font;
+            font-size:13px;
+            color:#fff;
+            padding:7px 14px 6px 12px;
+            display:block;
+            background: rgba(232,139,56,.8);
+            text-decoration:none;
+            border-top: 3px solid #d35400;
+            border-bottom: 3px solid #d35400;
+            outline:none;
+            text-transform: uppercase;
+            &:hover {
+                color: rgba(255,255,255,.8);
+            }
+            &.inactive{
+                padding-top:5px;
+                padding-bottom:5px;
+                color:#cccccc;
+                background: rgba(0,0,0,.6);
+                border-top: 2px solid $black;
+                border-bottom: none;
+                &:hover {
+                    color:#d35400;
+                }
+            }
+        }
+    }
 }
 .tab-container {
     background: rgba(232,139,56,.8);
     padding: 10px;
     color: #fff;
-    min-height: 151px;
+    min-height: 133px;
     border-top: 3px solid #d35400;
     border-bottom: 3px solid #d35400;
     a {
         color: #fff;
     }
-}    
+}
 .social {
     padding: 0;
     margin: 35px 0;
@@ -315,7 +317,7 @@ header {
     .day {
         display: inline-block;
         vertical-align: top;
-        width: 100%; 
+        //width: 100%; 
         border: 1px solid rgba(255,255,255,.5);
         padding: 6px;
         &:hover {
@@ -459,7 +461,7 @@ body.home .module-small {
         }
     }
     .icon-list li a:before {
-        content: "\00BB";
+        //content: "#00BB";
         color: #666666;
         padding-right: 5px;
     }
@@ -616,15 +618,18 @@ section.home-section {
     margin: 0;
 }
 
+
 // Small Devices to Large Devices Media Query
+@media (min-width: 768px) {
+
+
+// Desktop Media Query
 @media (min-width: 768px) {
 [class*="col-"] {
     padding: 0 2px;
     }
-}
-
-// Desktop Media Query
-@media (min-width: 1200px) {
+}    
+    
 body.home {
     background: url(../images/Campus-Background-comp.jpg) bottom;
     background-repeat: no-repeat;
@@ -635,10 +640,10 @@ body.home {
        margin-top: 40px;
     }
   nav {
-      float: right;
-      max-width: 1024px;
+      //float: right;
+      //max-width: 1024px;
       margin: 0 auto; 
-      padding-top: 40px;
+//      padding-top: 30px;
       ul {
           li {
               display: inline-block;
@@ -656,28 +661,28 @@ body.home {
           }
       }
   }
-  .navbar-default {
-      .navbar-header {
+  .navbar-default {  
+        text-align: right;
         background: transparent;
-      }
       .navbar-collapse {
         background: transparent;
-        padding-right: 0;
+      }
+      .navbar-form{
+        background: transparent;
+        padding-top: 15px;  
       }
       .navbar-nav > li > a {
           color: $white;
-          padding: 0;
+          padding:30px 5px;
           &:hover {
               color: $white;
               text-decoration: underline;
           }
       }
   }
-  //.container {
-    //width: 1024px;
-  //}
   .container-fluid {
-    padding-right: 0;      
+   padding-right: 0;
+   padding-left: 0;       
   }
   .social {
     padding: 0;
@@ -697,15 +702,14 @@ body.home {
       margin: 15px 0;
   }
   .mainLogo {
-      margin-top: -50px;    
+      margin-top: -70px;    
   }
   .services {
     width: 90%;
   }
   .calendar {
       .day {
-        //width: 13.95%; 
-        //margin-right: -5px;  
+
       }
       .title:before {
             display: inline-block;
@@ -717,8 +721,22 @@ body.home {
             margin: 0 15px 0 -20px;
         }
   }
-  .adspace {
-      margin-top: 105px;
+  .promospace {
+      margin-top: 50px;
+    .row {
+       margin-right: -2px;
+        position: absolute;
+        bottom: 8px;
+        margin-top: 0;
+    }
+      .col-md-6 {
+            padding: 0 5px 0 0;
+            &.tab-content {
+                margin-left: -5px;
+                width: 50.58%;
+                padding-right: 0px;
+            }
+        }
   }
   .left-column, .middle-column, .right-column {
       display: inline-block;
@@ -736,8 +754,8 @@ body.home {
           min-height: 115px;
       }
   }
-  .widget {
-    margin-bottom: 0px;
-  }
+//  .widget {
+//    margin-bottom: 0px;
+//  }
 }
 }
