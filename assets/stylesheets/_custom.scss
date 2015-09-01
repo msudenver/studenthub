@@ -192,7 +192,7 @@ header {
 
 .social {
     padding: 0;
-    margin: 35px 0;
+    margin: 15px 0;
     .fa-stack {
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -200,7 +200,7 @@ header {
     .fa-youtube, .fa-instagram, .fa-facebook, .fa-twitter, .fa-flickr {
     background-color: white;
     border-radius: 50px;
-    box-shadow: 0 8px 10px rgba(0,0,0,0.4);
+    //box-shadow: 0 8px 10px rgba(0,0,0,0.4);
     color: #45A8C7;
     &:hover {
         color: #3e97b3;
