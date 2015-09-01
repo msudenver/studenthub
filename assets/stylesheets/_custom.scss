@@ -522,14 +522,7 @@ body.home {
           }
       }
   }
-  .container-fluid {
-   //padding-right: 0;
-   //padding-left: 0;
-  }
-  .social {
-    padding: 0;
-    margin: 35px 0 0;
-  }
+
   h1 {
     @include font-size(5.6);
   }
