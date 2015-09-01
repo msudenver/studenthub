@@ -182,8 +182,12 @@ header {
         background: rgba(255,255,255,.15);
     }
     a:hover {
+     .text-center {
+        width:100%;
+         &:hover {
         text-decoration: none;
     }
+    } 
 }
 
 .social {
