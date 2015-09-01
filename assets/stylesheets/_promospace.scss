@@ -11,77 +11,98 @@
         @include font-size(1.5);
         &:before {
             display: none;
+            }
         }
+        p,a{ font-size: 14px;
+            color: $white;
+//          padding-top: 14px;
+            font-weight:200;
+            padding-bottom: 15px;
+            margin: 0 15px;
+            &:hover {
+            text-decoration: none;
+            }
+        }
+    }
+    
+}
+.promo-mobile{
+min-height:100px;
+}
+.promotab1{
+  background: $orange;
+  }
+.promotab2{
+  background:$teal;
+}
+.promotab3{
+  background:$purple;
+}
+
+.fa-chevron-right{
+color:$white;
+float:right;
+    padding-top:25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 100;
+}
+
+@media (min-width: 1200px) {
+  .promospace {
+    margin-top: 15%;
+    .nav >li {margin-top: 0px;}  
+    .nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: rgba(238, 238, 238, 0);
     }
     .row {
         margin-left: 0;
         margin-right: 0;
-        margin-top: -30%;
+        margin-top: -155px;
     }
-    .col-md-6 {
+    .col-sm-6 {
         padding: 0;
-
-    }
-    p {
-        color: $white;
-        margin: 0 30px;
-        @include font-size (1.6);
-        font-weight: 700;
-        line-height: 1.3;
-        a {
-            font-style: italic;
-            text-decoration: underline;
-            color: $white;
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
+    } 
+      
+ .promotab1{
+  background: $orange-trans;     
+  border-top: 3px solid $orange-border;
+  border-bottom: 3px solid $orange-border;
+  }
+.promotab2{
+  background: $teal-trans; 
+  border-top: 3px solid $teal-border;
+  border-bottom: 3px solid $teal-border;
 }
 
+.promotab3{
+  background: $purple-trans; 
+  border-top: 3px solid $purple-border;
+  border-bottom: 3px solid $purple-border;
+}
+  }
+}
 #tabs {
-    padding: 0;
-    margin-bottom: 0px;
+//    padding: 0;
+//    margin-bottom: -5px;
     li {
-	    list-style:none;
-
-        a {
+        a { height: 47px;
             font-family: $font;
             font-size:13px;
             color:#fff;
-            padding:7px 14px 6px 12px;
-            display:block;
-            background: rgba(232,139,56,.8);
+            padding:5px;
+//            display:block;
             text-decoration:none;
-            border-top: 3px solid #d35400;
-            border-bottom: 3px solid #d35400;
             outline:none;
             text-transform: uppercase;
-            &:hover {
-                color: rgba(255,255,255,.8);
-            }
-            &.inactive{
-                padding-top:5px;
-                padding-bottom:5px;
-                color:#cccccc;
-                background: rgba(0,0,0,.6);
-                border-top: 2px solid $black;
-                border-bottom: none;
-                &:hover {
-                    color:#d35400;
-                }
-            }
         }
     }
 }
 .tab-container {
-    background: rgba(232,139,56,.8);
-    padding: 10px;
+    height: 160px;
+    //padding: 2px;
     color: #fff;
-    min-height: 133px;
-    border-top: 3px solid #d35400;
-    border-bottom: 3px solid #d35400;
-    a {
-        color: #fff;
-    }
+    border-top: 3px solid ;
+    border-bottom: 2px solid ;
 }
