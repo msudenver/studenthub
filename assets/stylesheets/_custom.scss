@@ -1,5 +1,6 @@
 //@import "search-bar";
 
+
 // Mixins
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
@@ -96,6 +97,7 @@ p {
     font-weight: 400;
     @include font-size(1.2);
 }
+      
 header {
     //background: url(../images/skater.jpg) no-repeat;
     //background-size: cover;
@@ -176,12 +178,12 @@ header {
 	-webkit-align-items: center;
 	-webkit-box-align: center;
 	align-items: center;
-    //border-bottom: 1px solid rgba(255,255,255,0.7);
+    //border-bottom: 1px solid      rgba(255,255,255,0.7);
     min-height: 85px;
-    &:hover {
-        background: rgba(255,255,255,.15);
-    }
-    a:hover {
+   // &:hover {
+     //   background: rgba(255,255,255,.15);
+    //}
+    
      .text-center {
         width:100%;
          &:hover {
@@ -546,6 +548,7 @@ body.home {
   }
   .calendar {
       .day {
+          height: 125px;
       }
       .title:before {
             display: inline-block;
