@@ -1,11 +1,16 @@
 body.home {
-  background: url(../images/HomeMobileBG.jpg);
+  background: url(https://msudenver.edu/media/studenthub/images/Campus-Background-mobile.jpg) bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  width: 100%;
+  height: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+}
+
+body.home section {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 body.home h1 {
@@ -28,13 +33,14 @@ body.home h2 {
   margin: 30px 0 -10px 0px;
   position: relative;
   letter-spacing: 1px;
+  z-index: 99;
 }
 
 body.home h2:before {
   display: inline-block;
   width: 57px;
   height: 57px;
-  background: url(../images/sticker.png) no-repeat center bottom;
+  background: url(https://msudenver.edu/media/studenthub/images/sticker.png) no-repeat center bottom;
   content: '';
   vertical-align: middle;
   margin-right: 15px;
@@ -54,7 +60,7 @@ body.home h3:before {
   display: inline-block;
   width: 57px;
   height: 57px;
-  background: url(../images/sticker.png) no-repeat center right;
+  background: url(https://msudenver.edu/media/studenthub/images/sticker.png) no-repeat center right;
   content: '';
   text-align: right;
   margin: 0 8px 8px 0;
@@ -75,12 +81,6 @@ body.home p {
   font-weight: 400;
   font-size: 12px;
   font-size: 1.2rem;
-}
-
-body.home header {
-  background: url(../images/skater.jpg) no-repeat;
-  background-size: cover;
-  width: 100%;
 }
 
 body.home header .title {
@@ -129,17 +129,28 @@ body.home .services {
   width: 100%;
 }
 
-body.home .services li {
+body.home .services .services-btn {
+  border-radius: 0;
   display: inline-block;
   background: #1f4d69 url(../images/bgGrid.jpg);
-  width: 33%;
   margin: 0 -1px 1px 0;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  font-weight: 200;
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+body.home .services .services-btn:hover {
+  background: #1f4d69;
+  text-decoration: none;
 }
 
 body.home .services a {
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 200;
   padding: 20px 0;
   text-align: center;
   display: block;
@@ -148,7 +159,7 @@ body.home .services a {
 }
 
 body.home .services a:hover {
-  background: #1f4d69 url(../images/bgGridHover.jpg);
+  background: #1f4d69;
   text-decoration: none;
 }
 
@@ -160,157 +171,39 @@ body.home .content {
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  min-height: 85px;
 }
 
-body.home .content:hover {
-  background: rgba(255, 255, 255, 0.15);
+body.home .content .text-center {
+  width: 100%;
 }
 
-body.home .content a:hover {
+body.home .content .text-center:hover {
   text-decoration: none;
 }
 
-body.home .adspace {
-  position: relative;
-  padding: 10px 0;
-}
-
-body.home .adspace img {
-  max-width: 100%;
-}
-
-body.home .adspace h3 {
-  color: #f6ff07;
-  margin: 25px 30px 0;
-  font-size: 23px;
-  font-size: 2.3rem;
-}
-
-body.home .adspace h3:before {
-  display: none;
-}
-
-body.home .adspace .row {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: -30%;
-}
-
-body.home .adspace .col-md-6 {
-  padding: 0;
-}
-
-body.home .adspace p {
-  color: #ffffff;
-  margin: 0 30px;
-  font-size: 16px;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-body.home .adspace p a {
-  font-style: italic;
-  text-decoration: underline;
-  color: #ffffff;
-}
-
-body.home .adspace p a:hover {
-  text-decoration: none;
-}
-
-body.home #tabs {
-  padding: 0;
-  margin-bottom: 0px;
-}
-
-body.home #tabs li {
-  list-style: none;
-}
-
-body.home #tabs li a {
-  font-family: "Lato", sans-serif;
-  font-size: 13px;
-  color: #fff;
-  padding: 7px 14px 6px 12px;
-  display: block;
-  background: rgba(232, 139, 56, 0.8);
-  text-decoration: none;
-  border-top: 3px solid #d35400;
-  border-bottom: 3px solid #d35400;
-  outline: none;
-  text-transform: uppercase;
-}
-
-body.home #tabs li a:hover {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-body.home #tabs li a.inactive {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #cccccc;
-  background: rgba(0, 0, 0, 0.6);
-  border-top: 2px solid #2b2b2b;
-  border-bottom: none;
-}
-
-body.home #tabs li a.inactive:hover {
-  color: #d35400;
-}
-
-body.home .tab-container {
-  background: rgba(232, 139, 56, 0.8);
-  padding: 10px;
-  color: #fff;
-  min-height: 133px;
-  border-top: 3px solid #d35400;
-  border-bottom: 3px solid #d35400;
-}
-
-body.home .tab-container a {
-  color: #fff;
+body.home .content .description {
+  font-size: 1em;
+  font-weight: 300;
 }
 
 body.home .social {
   padding: 0;
-  margin: 35px 0;
+  margin: 15px 0;
 }
 
-body.home .social li {
-  display: inline-block;
-  width: 19.5%;
-  margin-right: -3px;
-  text-align: center;
+body.home .social .fa-stack {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
-body.home .social .twitter, body.home .social .flickr, body.home .social .facebook, body.home .social .linkedin, body.home .social .instagram {
-  display: inline-block;
-  height: 51px;
-  width: 51px;
-  background: url(../images/socialIcons.png) no-repeat;
-  vertical-align: top;
+body.home .social .fa-youtube, body.home .social .fa-instagram, body.home .social .fa-facebook, body.home .social .fa-twitter, body.home .social .fa-flickr {
+  background-color: white;
+  border-radius: 50px;
+  color: #45A8C7;
 }
 
-body.home .social .twitter:hover, body.home .social .flickr:hover, body.home .social .facebook:hover, body.home .social .linkedin:hover, body.home .social .instagram:hover {
-  opacity: .85;
-}
-
-body.home .social .flickr {
-  background-position: -56px 0;
-}
-
-body.home .social .facebook {
-  background-position: -112px 0;
-}
-
-body.home .social .linkedin {
-  background-position: -168px 0;
-}
-
-body.home .social .instagram {
-  background-position: -223px 0;
+body.home .social .fa-youtube:hover, body.home .social .fa-instagram:hover, body.home .social .fa-facebook:hover, body.home .social .fa-twitter:hover, body.home .social .fa-flickr:hover {
+  color: #3e97b3;
 }
 
 body.home .calendar {
@@ -357,49 +250,33 @@ body.home .calendar .title a:before {
 body.home .calendar .day {
   display: inline-block;
   vertical-align: top;
-  width: 100%;
+  height: 125px;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 6px;
+  padding: 10px;
+  background-color: rgba(30, 74, 101, 0.72);
 }
 
 body.home .calendar .day:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(30, 74, 101, 0.9);
 }
 
 body.home .calendar .day .date {
-  font-size: 10px;
-  font-size: 1rem;
+  color: #ffffff;
+  font-size: 12px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 400;
 }
 
 body.home .calendar .day .event {
+  color: #ffffff;
   display: block;
-  font-weight: 700;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-weight: 300;
+  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   line-height: 1.3;
-  margin-top: 15px;
-}
-
-body.home .calendar .day a {
-  display: block;
-  font-size: 12px;
-  font-size: 1.2rem;
-  font-style: italic;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-weight: 400;
-  margin-top: 20px;
-}
-
-body.home .purple {
-  background: #7e3663;
-  opacity: .87;
-  padding: 10px;
-  color: #ffffff;
-  min-height: 115px;
+  margin-top: 10px;
 }
 
 body.home .black {
@@ -407,10 +284,7 @@ body.home .black {
   padding: 10px;
   color: #ffffff;
   min-height: 115px;
-}
-
-body.home .black:hover {
-  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 body.home .blue {
@@ -418,10 +292,7 @@ body.home .blue {
   padding: 10px;
   color: #ffffff;
   min-height: 115px;
-}
-
-body.home .blue:hover {
-  background: #227baa;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 body.home .red {
@@ -429,39 +300,28 @@ body.home .red {
   padding: 10px;
   color: #ffffff;
   min-height: 115px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-body.home .red:hover {
-  background: rgba(191, 31, 23, 0.9);
-}
-
-body.home .two-rows {
-  min-height: 190px !important;
-}
-
-body.home .left-column {
+.left-column {
   text-align: center;
   text-transform: uppercase;
 }
 
-body.home .left-column .black {
-  background: rgba(43, 43, 43, 0.87);
+.left-column [class*="col-"] {
+  padding: 0 0px;
 }
 
-body.home .left-column .blue {
-  background: rgba(40, 151, 209, 0.87);
+.middle-column {
+  padding-left: 3px;
 }
 
-body.home .left-column .purple {
-  background: rgba(126, 54, 99, 0.87);
+.middle-column [class*="col-"] {
+  padding: 0 2px;
 }
 
-body.home .left-column .red {
-  background: rgba(226, 35, 26, 0.9);
-}
-
-body.home .middle-column a {
-  font-weight: 400;
+.middle-column a {
+  font-weight: 200;
   font-size: 18px;
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -471,19 +331,20 @@ body.home .middle-column a {
   color: #ffffff;
 }
 
-body.home .middle-column .black {
-  min-height: 115px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+.middle-column a:hover {
+  text-decoration: none;
 }
 
-body.home .middle-column .blue {
-  min-height: 115px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+.middle-column a .black:hover {
+  background: rgba(0, 0, 0, 0.8);
 }
 
-body.home .middle-column .red {
-  min-height: 115px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+.middle-column a .blue:hover {
+  background: #227baa;
+}
+
+.middle-column a .red:hover {
+  background: rgba(191, 31, 23, 0.9);
 }
 
 body.home .module-small {
@@ -522,7 +383,6 @@ body.home .module-small [class*="col-"] {
 }
 
 .widget .icon-list li a:before {
-  content: "\00BB";
   color: #666666;
   padding-right: 5px;
 }
@@ -627,82 +487,9 @@ footer .footer-social-links a {
   background-color: #fff;
 }
 
-/* ------------------------------------------------------------------
-Preloader
-------------------------------------------------------------------- */
-.page-loader {
-  position: fixed;
-  background: #000;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 9998;
-}
-
-.loader {
-  position: absolute;
-  border-left: 2px solid #ffffff;
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
-  border-right: 2px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  height: 46px;
-  width: 46px;
-  left: 50%;
-  top: 50%;
-  margin: -23px 0 0 -23px;
-  text-indent: -9999em;
-  font-size: 10px;
-  z-index: 9999;
-  -webkit-animation: load 0.8s infinite linear;
-  -moz-animation: load 0.8s infinite linear;
-  ms-animation: load 0.8s infinite linear;
-  o-animation: load 0.8s infinite linear;
-  animation: load 0.8s infinite linear;
-}
-
-.loader,
-.loader:after {
-  border-radius: 50%;
-  width: 46px;
-  height: 46px;
-}
-
-@-webkit-keyframes load {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes load {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-section.home-section {
-  margin: 0;
-}
-
 @media (min-width: 768px) {
-  [class*="col-"] {
-    padding: 0 2px;
-  }
-}
-
-@media (min-width: 1200px) {
   body.home {
-    background: url(../images/HomeBG.jpg);
+    background: url(https://msudenver.edu/media/studenthub/images/Campus-Background-comp.jpg) bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -712,10 +499,7 @@ section.home-section {
     margin-top: 40px;
   }
   body.home nav {
-    float: right;
-    max-width: 1024px;
     margin: 0 auto;
-    padding-top: 40px;
   }
   body.home nav ul li {
     display: inline-block;
@@ -729,33 +513,24 @@ section.home-section {
     margin-right: 12px;
     letter-spacing: 1px;
   }
-  body.home nav ul li:last-child a {
-    margin-right: 0;
-  }
-  body.home .navbar-default .navbar-header {
+  body.home .navbar-default {
+    text-align: right;
     background: transparent;
   }
   body.home .navbar-default .navbar-collapse {
     background: transparent;
-    padding-right: 0;
+  }
+  body.home .navbar-default .navbar-form {
+    background: transparent;
+    padding-top: 15px;
   }
   body.home .navbar-default .navbar-nav > li > a {
     color: #ffffff;
-    padding: 0;
+    padding: 30px 5px;
   }
   body.home .navbar-default .navbar-nav > li > a:hover {
     color: #ffffff;
     text-decoration: underline;
-  }
-  body.home .container {
-    width: 1024px;
-  }
-  body.home .container-fluid {
-    padding-right: 0;
-  }
-  body.home .social {
-    padding: 0;
-    margin: 35px 0 0;
   }
   body.home h1 {
     font-size: 56px;
@@ -768,18 +543,11 @@ section.home-section {
     width: 100%;
     display: block;
   }
-  body.home section {
-    margin: 15px 0;
-  }
   body.home .mainLogo {
-    margin-top: -50px;
+    margin-top: -70px;
   }
   body.home .services {
     width: 90%;
-  }
-  body.home .calendar .day {
-    width: 13.95%;
-    margin-right: -5px;
   }
   body.home .calendar .title:before {
     display: inline-block;
@@ -790,24 +558,7 @@ section.home-section {
     vertical-align: bottom;
     margin: 0 15px 0 -20px;
   }
-  body.home .adspace {
-    margin-top: 105px;
-  }
-  body.home .adspace .row {
-    margin-right: -2px;
-    position: absolute;
-    bottom: 8px;
-    margin-top: 0;
-  }
-  body.home .adspace .col-md-6 {
-    padding: 0 5px 0 0;
-  }
-  body.home .adspace .col-md-6.tab-content {
-    margin-left: -5px;
-    width: 50.58%;
-    padding-right: 0px;
-  }
-  body.home .left-column, body.home .middle-column, body.home .right-column {
+  body.home .left-column, body.home .middle-column {
     display: inline-block;
     vertical-align: top;
   }
@@ -823,7 +574,114 @@ section.home-section {
   body.home .left-column .red {
     min-height: 115px;
   }
-  body.home .widget {
-    margin-bottom: 0px;
+}
+
+.promospace {
+  margin-top: 30px;
+  position: relative;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.promospace .promotab1 h3, .promospace .promotab2 h3, .promospace .promotab3 h3 {
+  color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.promospace .promotab1 h3:before, .promospace .promotab2 h3:before, .promospace .promotab3 h3:before {
+  display: none;
+}
+
+.promospace .promotab1 p, .promospace .promotab1 a, .promospace .promotab2 p, .promospace .promotab2 a, .promospace .promotab3 p, .promospace .promotab3 a {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 200;
+  padding-bottom: 15px;
+  margin: 0 15px;
+}
+
+.promospace .promotab1 p:hover, .promospace .promotab1 a:hover, .promospace .promotab2 p:hover, .promospace .promotab2 a:hover, .promospace .promotab3 p:hover, .promospace .promotab3 a:hover {
+  text-decoration: none;
+}
+
+.promo-mobile {
+  min-height: 100px;
+}
+
+.promotab1 {
+  background: #e67e22;
+}
+
+.promotab2 {
+  background: #16a085;
+}
+
+.promotab3 {
+  background: #8e44ad;
+}
+
+.fa-chevron-right {
+  color: #ffffff;
+  float: right;
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: 100;
+}
+
+@media (min-width: 1200px) {
+  .promospace {
+    margin-top: 15%;
   }
+  .promospace .nav > li {
+    margin-top: 0px;
+  }
+  .promospace .nav > li > a:hover, .promospace .nav > li > a:focus {
+    text-decoration: none;
+    background-color: rgba(238, 238, 238, 0);
+  }
+  .promospace .row {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -155px;
+  }
+  .promospace .col-sm-6 {
+    padding: 0;
+  }
+  .promospace .promotab1 {
+    background: rgba(230, 126, 34, 0.75);
+    border-top: 3px solid #d35400;
+    border-bottom: 3px solid #d35400;
+  }
+  .promospace .promotab2 {
+    background: rgba(0, 118, 95, 0.75);
+    border-top: 3px solid #00765f;
+    border-bottom: 3px solid #00765f;
+  }
+  .promospace .promotab3 {
+    background: rgba(102, 0, 142, 0.75);
+    border-top: 3px solid #66008e;
+    border-bottom: 3px solid #66008e;
+  }
+}
+
+#tabs li a {
+  height: 47px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.tab-container {
+  height: 159px;
+  color: #fff;
+  border-top: 3px solid;
+  border-bottom: 2px solid;
 }

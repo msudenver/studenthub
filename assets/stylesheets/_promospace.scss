@@ -1,0 +1,108 @@
+.promospace {
+    margin-top:30px;
+    position: relative;
+    padding: 10px 0;
+    overflow: hidden;
+    .promotab1, .promotab2, .promotab3 {
+        h3{
+        color: $white;
+        margin-top: 25px;
+        margin-bottom:5px;
+        @include font-size(1.5);
+        &:before {
+            display: none;
+            }
+        }
+        p,a{ font-size: 14px;
+            color: $white;
+//          padding-top: 14px;
+            font-weight:200;
+            padding-bottom: 15px;
+            margin: 0 15px;
+            &:hover {
+            text-decoration: none;
+            }
+        }
+    }
+    
+}
+.promo-mobile{
+min-height:100px;
+}
+.promotab1{
+  background: $orange;
+  }
+.promotab2{
+  background:$teal;
+}
+.promotab3{
+  background:$purple;
+}
+
+.fa-chevron-right{
+color:$white;
+float:right;
+    padding-top:25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 100;
+}
+
+@media (min-width: 1200px) {
+  .promospace {
+    margin-top: 15%;
+    .nav >li {margin-top: 0px;}  
+    .nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: rgba(238, 238, 238, 0);
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -155px;
+    }
+    .col-sm-6 {
+        padding: 0;
+    } 
+      
+ .promotab1{
+  background: $orange-trans;     
+  border-top: 3px solid $orange-border;
+  border-bottom: 3px solid $orange-border;
+  }
+.promotab2{
+  background: $teal-trans; 
+  border-top: 3px solid $teal-border;
+  border-bottom: 3px solid $teal-border;
+}
+
+.promotab3{
+  background: $purple-trans; 
+  border-top: 3px solid $purple-border;
+  border-bottom: 3px solid $purple-border;
+}
+  }
+}
+#tabs {
+//    padding: 0;
+//    margin-bottom: -5px;
+    li {
+        a { height: 47px;
+            font-family: $font;
+            font-size:13px;
+            color:#fff;
+            padding:5px;
+//            display:block;
+            text-decoration:none;
+            outline:none;
+            text-transform: uppercase;
+        }
+    }
+}
+.tab-container {
+    height: 159px;
+    //padding: 2px;
+    color: #fff;
+    border-top: 3px solid ;
+    border-bottom: 2px solid ;
+}

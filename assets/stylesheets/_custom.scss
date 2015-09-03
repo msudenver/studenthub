@@ -1,11 +1,12 @@
-// Mixins 
+//@import "search-bar";
+
+// Mixins
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
 }
 
-
-//Variables 
+//Variables
 $purple: #7e3663;
 $white: #ffffff;
 $black: #2b2b2b;
@@ -14,18 +15,33 @@ $dkBlue: #1f4d69;
 $red: #e2231a;
 $yellow: #f6ff07;
 $gray: #959595;
+$orange: #e67e22;
+$orange-border: #d35400;
+$orange-trans: rgba(230, 126, 34, 0.75);
+$teal: #16a085;
+$teal-border: #00765f;
+$teal-trans: rgba(0, 118, 95, 0.75);
+$purple: #8e44ad;
+$purple-border: #66008e;
+$purple-trans:rgba(102, 0, 142, 0.75);
 $font: 'Lato', sans-serif;
 
 
 //Mobile and Up Styles
 body.home {
-    background: url(../images/HomeMobileBG.jpg);
+    background: url(https://msudenver.edu/media/studenthub/images/Campus-Background-mobile.jpg)     bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    width: 100%;
+    height: 100%;
     font-family: $font;
     font-weight: 400;
+    
+    section {
+      margin-top: 15px;
+      margin-bottom:15px;
+
+    }
     h1 {
         @include font-size(4.0);
         text-transform: uppercase;
@@ -36,18 +52,19 @@ body.home {
         font-weight: 700;
     }
     h2 {
-        font-weight: 700; 
+        font-weight: 700;
         @include font-size(2.2);
         text-transform: uppercase;
         color: $white;
         margin: 30px 0 -10px 0px;
-        position: relative;   
+        position: relative;
         letter-spacing: 1px;
+        z-index: 99;
         &:before {
             display: inline-block;
             width: 57px;
             height: 57px;
-            background: url(../images/sticker.png) no-repeat center bottom;
+            background: url(https://msudenver.edu/media/studenthub/images/sticker.png) no-repeat center bottom;
             content: '';
             vertical-align: middle;
             margin-right: 15px;
@@ -57,7 +74,7 @@ body.home {
         font-weight: 900;
         @include font-size(1.8);
         text-transform: uppercase;
-        margin: 8px 0 0; 
+        margin: 8px 0 0;
         color: $white;
         text-shadow: 0 0 7px rgba(0,0,0,.45);
     }
@@ -65,12 +82,12 @@ body.home {
         display: inline-block;
         width: 57px;
         height: 57px;
-        background: url(../images/sticker.png) no-repeat center right;
+        background: url(https://msudenver.edu/media/studenthub/images/sticker.png) no-repeat center right;
         content: '';
         text-align: right;
         margin: 0 8px 8px 0;
         vertical-align: middle;
-    } 
+    }
     h4 {
         font-weight: 500;
         @include font-size(1.8);
@@ -83,17 +100,18 @@ p {
     font-weight: 400;
     @include font-size(1.2);
 }
+      
 header {
-    background: url(../images/skater.jpg) no-repeat;
-    background-size: cover;
-    width: 100%;
+    //background: url(../images/skater.jpg) no-repeat;
+    //background-size: cover;
+    //width: 100%;
     .title {
         width: 60%;
         display: inline-block;
         vertical-align: bottom;
     }
     .mainLogo {
-      max-width: 35%;    
+      max-width: 35%;
     }
 }
 
@@ -126,22 +144,31 @@ header {
     padding: 0;
     margin: 0;
     width: 100%;
-    li {
+    .services-btn {
+        border-radius: 0;
         display: inline-block;
         background: $dkBlue url(../images/bgGrid.jpg);
-        width: 33%;
         margin: 0 -1px 1px 0;
         border: 1px solid rgba(255,255,255,.5);
+        color: $white;
+        font-weight: 200;
+        text-align: center;
+        display: block;
+        @include font-size(1.8);
+        &:hover {
+            background: $dkBlue;
+            text-decoration: none;
+        }
     }
     a {
         color: $white;
-        font-weight: 400; 
+        font-weight: 200;
         padding: 20px 0;
         text-align: center;
         display: block;
         @include font-size(1.8);
         &:hover {
-            background: $dkBlue url(../images/bgGridHover.jpg);
+            background: $dkBlue;
             text-decoration: none;
         }
     }
@@ -154,131 +181,35 @@ header {
 	-webkit-align-items: center;
 	-webkit-box-align: center;
 	align-items: center;
-    //border-bottom: 1px solid rgba(255,255,255,0.7);
-    min-height: 85px;
-    &:hover {
-        background: rgba(255,255,255,.15);
-    }
-    a:hover {
+    //min-height: 85px;
+
+     .text-center {
+        width:100%;
+         &:hover {
         text-decoration: none;
-    }
+            }
+        } 
+     .description {
+        font-size: 1em;
+        font-weight: 300;
+     }      
 }
-.adspace {
-    position: relative;
-    padding: 10px 0;
-    img {
-        max-width: 100%;
-    }
-    h3 {
-        color: $yellow;
-        margin: 25px 30px 0;
-        @include font-size(2.3);
-        &:before {
-            display: none;
-        }
-    }
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: -30%;
-    }
-    .col-md-6 {
-        padding: 0;
 
-    }
-    p {
-        color: $white;
-        margin: 0 30px;
-        @include font-size (1.6);
-        font-weight: 700;
-        line-height: 1.3;
-        a {
-            font-style: italic;
-            text-decoration: underline;
-            color: $white;
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
-}
-    
-#tabs {
-    padding: 0;
-    margin-bottom: 0px;
-    li {
-	    list-style:none;
-
-        a {
-            font-family: $font;
-            font-size:13px;
-            color:#fff;
-            padding:7px 14px 6px 12px;
-            display:block;
-            background: rgba(232,139,56,.8);
-            text-decoration:none;
-            border-top: 3px solid #d35400;
-            border-bottom: 3px solid #d35400;
-            outline:none;
-            text-transform: uppercase;
-            &:hover {
-                color: rgba(255,255,255,.8);
-            }
-            &.inactive{
-                padding-top:5px;
-                padding-bottom:5px;
-                color:#cccccc;
-                background: rgba(0,0,0,.6);
-                border-top: 2px solid $black;
-                border-bottom: none;
-                &:hover {
-                    color:#d35400;
-                }
-            }
-        }
-    }
-}
-.tab-container {
-    background: rgba(232,139,56,.8);
-    padding: 10px;
-    color: #fff;
-    min-height: 133px;
-    border-top: 3px solid #d35400;
-    border-bottom: 3px solid #d35400;
-    a {
-        color: #fff;
-    }
-}
 .social {
     padding: 0;
-    margin: 35px 0;
-    li {
-        display: inline-block;
-        width: 19.5%;
-        margin-right: -3px;
-        text-align: center;
+    margin: 15px 0;
+    .fa-stack {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     }
-    .twitter, .flickr, .facebook, .linkedin, .instagram {
-        display: inline-block;
-        height: 51px;
-        width: 51px;
-        background: url(../images/socialIcons.png) no-repeat;
-        vertical-align: top;
-        &:hover {
-            opacity: .85;
-        }
-    }
-    .flickr {
-        background-position: -56px 0;
-    }
-    .facebook {
-        background-position: -112px 0;
-    }
-    .linkedin {
-        background-position: -168px 0;
-    }
-    .instagram {
-        background-position: -223px 0;
+    .fa-youtube, .fa-instagram, .fa-facebook, .fa-twitter, .fa-flickr {
+    background-color: white;
+    border-radius: 50px;
+    //box-shadow: 0 8px 10px rgba(0,0,0,0.4);
+    color: #45A8C7;
+    &:hover {
+        color: #3e97b3;
+      }
     }
 }
 .calendar {
@@ -307,126 +238,104 @@ header {
             color: $white;
             text-decoration: underline;
             &:before {
-                text-decoration: none; 
+                text-decoration: none;
             }
         }
     }
     .day {
         display: inline-block;
         vertical-align: top;
-        width: 100%; 
+        //width: 100%;
+        height: 125px;
         border: 1px solid rgba(255,255,255,.5);
-        padding: 6px;
+        padding: 10px;
+        background-color: rgba(30, 74, 101, 0.72);
         &:hover {
-            background: rgba(255,255,255,0.1);
+            background: rgba(30, 74, 101, 0.9);
         }
         .date {
-            @include font-size(1.0);
+            color:$white;
+            @include font-size(1.2);
             text-transform: uppercase;
             font-weight: 400;
         }
         .event {
+            color:$white;
             display: block;
-            font-weight: 700;
-            @include font-size(1.2);
+            font-weight: 300;
+            @include font-size(1.4);
             text-transform: uppercase;
             line-height: 1.3;
-            margin-top: 15px;
-        }
-        a {
-            display: block;
-            @include font-size(1.2);
-            font-style: italic;
-            text-transform: uppercase;
-            color: $white;
-            font-weight: 400;
-            margin-top: 20px;
+            margin-top: 10px;
         }
     }
 }
-.purple {
-    background: $purple;
-    opacity: .87;
-    padding: 10px;
-    color: $white;
-    min-height: 115px;
-}
+
 .black {
     background: rgba(43, 43, 43, .8);
     padding: 10px;
     color: $white;
     min-height: 115px;
-    &:hover {
-        background: rgba(0, 0, 0, 0.8);
-    }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 .blue {
     background: $blue;
     padding: 10px;
     color: $white;
     min-height: 115px;
-    &:hover {
-        background: rgb(34, 123, 170);
-    }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
 }
 .red {
     background: rgba(226,35,26, .9);
     padding: 10px;
     color: $white;
-    min-height: 115px; 
-    &:hover {
-        background: rgba(191, 31, 23, 0.9);
+    min-height: 115px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+   
     }
 }
-.two-rows {
-    min-height: 190px !important;    
-}
-//.three-rows {
-//    min-height: 275px !important;    
-//}
+
 .left-column {
+     [class*="col-"] {
+    padding: 0 0px;
+    }
     text-align: center;
     text-transform: uppercase;
-    .black {
-        background: rgba(43,43,43,.87);
-    }
-    .blue {
-        background: rgba(40,151,209,.87);
-    }
-    .purple {
-          background: rgba(126,54,99,.87);
-    }
-    .red {
-        background: rgba(226,35,26, .9);
-    }
 }
 .middle-column {
+     [class*="col-"] {
+    padding: 0 2px;
+    }
+    padding-left: 3px;
     a {
-        font-weight: 400;
+        font-weight: 200;
         @include font-size(1.8);
         text-transform: uppercase;
         margin-bottom: 0;
         display: block;
-        width: 100%;  
+        width: 100%;
         color: $white;
-    }
+        &:hover {
+        text-decoration: none;
+        }
       .black {
-          min-height: 115px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-          
+           &:hover {
+        background: rgba(0, 0, 0, .8);
+        }   
+
       }
       .blue {
-          min-height: 115px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+            &:hover {
+        background: rgb(34, 123, 170);
+    }
       }
       .red {
-          min-height: 115px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+           &:hover {
+        background: rgba(191, 31, 23, 0.9);
       }
 }
-//.right-column {
-//    display: none;
-//}
+}
 
 } // end homepage styles
 
@@ -458,11 +367,11 @@ body.home .module-small {
         }
     }
     .icon-list li a:before {
-        content: "\00BB";
+        //content: "#00BB";
         color: #666666;
         padding-right: 5px;
     }
-    
+
 }
 .widget-posts-image {
     float: left;
@@ -548,84 +457,15 @@ footer {
   opacity: .9;
   background-color: #fff;
 }
-/* ------------------------------------------------------------------
-Preloader
-------------------------------------------------------------------- */
 
-.page-loader {
-	position: fixed;
-	background: #000;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	top: 0;
-	z-index: 9998;
-}
-
-.loader {
-	position: absolute;
-	border-left: 2px solid #ffffff;
-	border-top: 2px solid rgba(255, 255, 255, 0.2);
-	border-right: 2px solid rgba(255, 255, 255, 0.2);
-	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-	height: 46px;
-	width: 46px;
-	left: 50%;
-	top: 50%;
-	margin: -23px 0 0 -23px;
-	text-indent: -9999em;
-	font-size: 10px;
-	z-index: 9999;
-	-webkit-animation: load 0.8s infinite linear;
-	   -moz-animation: load 0.8s infinite linear;
-	     ms-animation: load 0.8s infinite linear;
-	      o-animation: load 0.8s infinite linear;
-	        animation: load 0.8s infinite linear;
-}
-
-.loader,
-.loader:after {
-	border-radius: 50%;
-	width: 46px;
-	height: 46px;
-}
-
-@-webkit-keyframes load {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes load {
-	0% {
-		-webkit-transform: rotate(0deg);
-		transform: rotate(0deg);
-	}
-	100% {
-		-webkit-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
-}
-section.home-section {
-    margin: 0;
-}
 
 // Small Devices to Large Devices Media Query
 @media (min-width: 768px) {
-[class*="col-"] {
-    padding: 0 2px;
-    }
+.sections{
+    
 }
-
-// Desktop Media Query
-@media (min-width: 1200px) {
 body.home {
-    background: url(../images/HomeBG.jpg) ;
+    background: url(https://msudenver.edu/media/studenthub/images/Campus-Background-comp.jpg) bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -634,10 +474,7 @@ body.home {
        margin-top: 40px;
     }
   nav {
-      float: right;
-      max-width: 1024px;
-      margin: 0 auto; 
-      padding-top: 40px;
+      margin: 0 auto;
       ul {
           li {
               display: inline-block;
@@ -650,62 +487,45 @@ body.home {
               margin-right: 12px;
               letter-spacing: 1px;
           }
-          li:last-child a {
-              margin-right: 0;
-          }
       }
   }
   .navbar-default {
-      .navbar-header {
+        text-align: right;
         background: transparent;
-      }
       .navbar-collapse {
         background: transparent;
-        padding-right: 0;
+      }
+      .navbar-form{
+        background: transparent;
+        padding-top: 15px;
       }
       .navbar-nav > li > a {
           color: $white;
-          padding: 0;
+          padding:30px 5px;
           &:hover {
               color: $white;
               text-decoration: underline;
           }
       }
   }
-  .container {
-    width: 1024px;
-  }
-  .container-fluid {
-    padding-right: 0;      
-  }
-  .social {
-    padding: 0;
-    margin: 35px 0 0;
-  }
+
   h1 {
     @include font-size(5.6);
   }
   h2 {
-    margin-left: -8px;  
+    margin-left: -8px;
   }
   h3:before {
     width: 100%;
     display: block;
-  } 
-  section {
-      margin: 15px 0;
   }
   .mainLogo {
-      margin-top: -50px;    
+      margin-top: -70px;
   }
   .services {
     width: 90%;
   }
   .calendar {
-      .day {
-        width: 13.95%; 
-        margin-right: -5px;  
-      }
       .title:before {
             display: inline-block;
             width: 57px;
@@ -716,27 +536,11 @@ body.home {
             margin: 0 15px 0 -20px;
         }
   }
-  .adspace {
-      margin-top: 105px;
-    .row {
-       margin-right: -2px;
-        position: absolute;
-        bottom: 8px;
-        margin-top: 0;
-    }
-      .col-md-6 {
-            padding: 0 5px 0 0;
-            &.tab-content {
-                margin-left: -5px;
-                width: 50.58%;
-                padding-right: 0px;
-            }
-        }
-  }
-  .left-column, .middle-column, .right-column {
+  .left-column, .middle-column {
       display: inline-block;
       vertical-align: top;
-  }    
+      
+  }
   .left-column {
       text-align: right;
       .black {
@@ -749,8 +553,7 @@ body.home {
           min-height: 115px;
       }
   }
-  .widget {
-    margin-bottom: 0px;
-  }
 }
 }
+
+@import "promospace";
