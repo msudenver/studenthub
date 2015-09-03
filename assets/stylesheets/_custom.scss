@@ -1,12 +1,10 @@
 //@import "search-bar";
 
-
 // Mixins
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
 }
-
 
 //Variables
 $purple: #7e3663;
@@ -31,14 +29,19 @@ $font: 'Lato', sans-serif;
 
 //Mobile and Up Styles
 body.home {
-    background: url(../images/Campus-Background-mobile.jpg) bottom;
+    background: url(https://msudenver.edu/media/studenthub/images/Campus-Background-mobile.jpg)     bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    width: 100%;
+    height: 100%;
     font-family: $font;
     font-weight: 400;
+    
+    section {
+      margin-top: 15px;
+      margin-bottom:15px;
 
+    }
     h1 {
         @include font-size(4.0);
         text-transform: uppercase;
@@ -61,7 +64,7 @@ body.home {
             display: inline-block;
             width: 57px;
             height: 57px;
-            background: url(../images/sticker.png) no-repeat center bottom;
+            background: url(https://msudenver.edu/media/studenthub/images/sticker.png) no-repeat center bottom;
             content: '';
             vertical-align: middle;
             margin-right: 15px;
@@ -79,7 +82,7 @@ body.home {
         display: inline-block;
         width: 57px;
         height: 57px;
-        background: url(../images/sticker.png) no-repeat center right;
+        background: url(https://msudenver.edu/media/studenthub/images/sticker.png) no-repeat center right;
         content: '';
         text-align: right;
         margin: 0 8px 8px 0;
@@ -178,18 +181,18 @@ header {
 	-webkit-align-items: center;
 	-webkit-box-align: center;
 	align-items: center;
-    //border-bottom: 1px solid      rgba(255,255,255,0.7);
-    min-height: 85px;
-   // &:hover {
-     //   background: rgba(255,255,255,.15);
-    //}
-    
+    //min-height: 85px;
+
      .text-center {
         width:100%;
          &:hover {
         text-decoration: none;
-    }
-    } 
+            }
+        } 
+     .description {
+        font-size: 1em;
+        font-weight: 300;
+     }      
 }
 
 .social {
@@ -243,90 +246,68 @@ header {
         display: inline-block;
         vertical-align: top;
         //width: 100%;
+        height: 125px;
         border: 1px solid rgba(255,255,255,.5);
-        padding: 6px;
+        padding: 10px;
+        background-color: rgba(30, 74, 101, 0.72);
         &:hover {
-            background: rgba(255,255,255,0.1);
+            background: rgba(30, 74, 101, 0.9);
         }
         .date {
-            @include font-size(1.0);
+            color:$white;
+            @include font-size(1.2);
             text-transform: uppercase;
             font-weight: 400;
         }
         .event {
+            color:$white;
             display: block;
-            font-weight: 700;
-            @include font-size(1.2);
+            font-weight: 300;
+            @include font-size(1.4);
             text-transform: uppercase;
             line-height: 1.3;
-            margin-top: 15px;
-        }
-        a {
-            display: block;
-            @include font-size(1.2);
-            font-style: italic;
-            text-transform: uppercase;
-            color: $white;
-            font-weight: 400;
-            margin-top: 20px;
+            margin-top: 10px;
         }
     }
 }
-.purple {
-    background: $purple;
-    opacity: .87;
-    padding: 10px;
-    color: $white;
-    min-height: 115px;
-}
+
 .black {
     background: rgba(43, 43, 43, .8);
     padding: 10px;
     color: $white;
     min-height: 115px;
-    &:hover {
-        background: rgba(0, 0, 0, 0.8);
-    }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
 .blue {
     background: $blue;
     padding: 10px;
     color: $white;
     min-height: 115px;
-    &:hover {
-        background: rgb(34, 123, 170);
-    }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
 }
 .red {
     background: rgba(226,35,26, .9);
     padding: 10px;
     color: $white;
     min-height: 115px;
-    &:hover {
-        background: rgba(191, 31, 23, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+   
     }
-}
-.two-rows {
-    min-height: 190px !important;
 }
 
 .left-column {
+     [class*="col-"] {
+    padding: 0 0px;
+    }
     text-align: center;
     text-transform: uppercase;
-    .black {
-        background: rgba(43,43,43,.87);
-    }
-    .blue {
-        background: rgba(40,151,209,.87);
-    }
-    .purple {
-          background: rgba(126,54,99,.87);
-    }
-    .red {
-        background: rgba(226,35,26, .9);
-    }
 }
 .middle-column {
+     [class*="col-"] {
+    padding: 0 2px;
+    }
+    padding-left: 3px;
     a {
         font-weight: 200;
         @include font-size(1.8);
@@ -335,22 +316,26 @@ header {
         display: block;
         width: 100%;
         color: $white;
-    }
+        &:hover {
+        text-decoration: none;
+        }
       .black {
-          min-height: 115px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+           &:hover {
+        background: rgba(0, 0, 0, .8);
+        }   
 
       }
       .blue {
-          min-height: 115px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+            &:hover {
+        background: rgb(34, 123, 170);
+    }
       }
       .red {
-          min-height: 115px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+           &:hover {
+        background: rgba(191, 31, 23, 0.9);
       }
 }
-
+}
 
 } // end homepage styles
 
@@ -476,12 +461,11 @@ footer {
 
 // Small Devices to Large Devices Media Query
 @media (min-width: 768px) {
-[class*="col-"] {
-    padding: 0 2px;
-    }
-
+.sections{
+    
+}
 body.home {
-    background: url(../images/Campus-Background-comp.jpg) bottom;
+    background: url(https://msudenver.edu/media/studenthub/images/Campus-Background-comp.jpg) bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -535,11 +519,6 @@ body.home {
     width: 100%;
     display: block;
   }
-  section {
-      margin-top: 15px;
-      margin-bottom:15px;
-
-  }
   .mainLogo {
       margin-top: -70px;
   }
@@ -547,9 +526,6 @@ body.home {
     width: 90%;
   }
   .calendar {
-      .day {
-          height: 125px;
-      }
       .title:before {
             display: inline-block;
             width: 57px;
@@ -563,6 +539,7 @@ body.home {
   .left-column, .middle-column {
       display: inline-block;
       vertical-align: top;
+      
   }
   .left-column {
       text-align: right;
