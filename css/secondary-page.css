@@ -25,6 +25,7 @@ a {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+
 }
 
 .container-fluid {
@@ -36,7 +37,12 @@ a {
 
 /* header */
 
+.navbar-toggle {
+    border: 1px;
+}
+
 #header {
+
     background-image: url(/images/header_image.png);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -44,7 +50,7 @@ a {
     -o-background-size: cover;
     background-size: cover;
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .msudenver_logo {
@@ -64,6 +70,11 @@ a {
     text-transform: uppercase;
     line-height: 90%;
     margin: 90px 0 0 10px;
+
+}
+
+a.studenthub:hover {
+    text-decoration: none;
 
 }
 
@@ -88,6 +99,7 @@ a.nav-links {
 
 a.nav-links:hover {
     color: #98cceb;
+    text-decoration: none;
     
 }
 
@@ -108,6 +120,218 @@ a.breadcrumbs {
     padding: 10px 0px 10px 0px;
     
 }
+    .socialmedia {
+    display: inline-block;
+}
+
+
+/* media queries */
+
+/*for devices with max width of 320px such as apple iPad */
+
+@media (max-width: 998px) {
+    #header {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    }
+    
+    .sectiontitle {
+    color: #fff;
+    float: right;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+    .studenthub {
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 90%;
+    margin: 80px 0 0 10px;
+
+}   
+    
+    .msudenver_logo {
+    width: 200px;
+    padding-left: 20px;
+}
+    
+/*for devices with max width of 320px such as Nokia Lumia 920, Google Nexus 7, */
+    
+}
+
+    @media (max-width: 765px) {
+        
+    #header {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    }
+    
+    .navbar-inverse {
+    margin-bottom: 0px;
+    }
+        
+    .msudenver_logo {
+    width: 220px;
+    padding-left: 20px;
+}
+    
+    .studenthub {
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 90%;
+    margin: 90px 0 0 10px;
+
+}    
+        
+    .sectiontitle {
+    color: #fff;
+    text-align: right;
+    border-bottom: 4px solid #acc0c8;
+    width: 100%;
+    font-size: 30px;
+/*    margin: 25px 0 0 0px;*/
+    text-transform: uppercase;
+}
+        
+    li.toplinks {
+    display: block;
+    padding: 2px;
+    margin-right: 20px;
+}
+    
+    li.toplinks-social {
+/*    margin-right: 28px;*/
+}
+    .socialmedia {
+    margin-right:26px;
+}
+    }
+    
+
+/*for devices with max width of 320px such as HTC one */
+    
+@media (max-width: 400px) {
+      
+    #header {
+    background-image: none;
+    background: #000; 
+/*
+    background: -moz-linear-gradient(top,  #007499 0%, #000000 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#007499), color-stop(100%,#000000));
+    background: -webkit-linear-gradient(top,  #007499 0%,#000000 100%); 
+    background: -o-linear-gradient(top,  #007499 0%,#000000 100%); 
+    background: -ms-linear-gradient(top,  #007499 0%,#000000 100%); 
+    background: linear-gradient(to bottom,  #007499 0%,#000000 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007499', endColorstr='#000000',GradientType=0 ); 
+*/
+    padding-top: 5px;
+    padding-bottom: 20px; 
+}
+    
+    .sectiontitle {
+    border-bottom: 4px solid #007296;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #c3d5dc;
+    width: 100%;
+    text-align: right;
+
+}
+    
+    .msudenver_logo {
+    width: 200px;
+        padding-left: 20px;
+}
+    
+    .studenthub {
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 90%;
+    margin: 95px 0 0 10px;
+
+}
+    
+/*for devices with max width of 320px such as apple iphone 5*/
+
+}
+
+@media (max-width: 320px) {
+      
+    .sectiontitle {
+    border-bottom: 4px solid #007296;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #c3d5dc;
+    width: 100%;
+    text-align: right;
+
+}
+    
+    .msudenver_logo {
+    width: 150px;
+        padding-left: 20px;
+}
+    
+    .studenthub {
+    float: left;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 90%;
+    margin: 60px 0 0 10px;
+
+}
+    
+/* for devices with max width of 240px such as samsung galaxy y */
+
+}
+
+@media (max-width: 240px) {
+      
+    .sectiontitle {
+    border-bottom: 4px solid #007296;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #c3d5dc;
+    width: 100%;
+    text-align: right;
+
+}
+    
+    .msudenver_logo {
+    width: 130px;
+        padding-left: 0px;
+}
+    
+    .studenthub {
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 90%;
+    margin: 60px 0 0 10px;
+
+}
+    
+
+}
+
 
 
 /* page content */
@@ -115,6 +339,8 @@ a.breadcrumbs {
 h1, h2, h3, h4, h5, h6 {
     color: #006a93;
     text-transform: uppercase;
+    border-bottom: 1px #e6e6e6 solid;
+    padding-bottom: 5px;
 }
 
 
@@ -423,4 +649,12 @@ a.footer {
 .rowdygray:hover {
   background: #646366;
   color: #fff!important
+}
+
+
+
+.body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
