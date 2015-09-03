@@ -11,14 +11,13 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,600,700,300' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <t4 type="media" id="95621"/>  
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<!--    <link href="css/rival.css" rel="stylesheet">-->
+    
     <link href="css/secondary-page.css" rel="stylesheet">
-    <t4 type="media" id="95567"/><!--secondary-page.css-->  
     
 </head>
 <body>
-
     <!-- PRELOADER -->
 	<div class="page-loader">
 		<div class="loader">Loading...</div>
@@ -26,7 +25,7 @@
     
     <!-- BEGINS	HEADER-->
     <div id="header">
-			<div class="container">
+        <div class="container">
                 <div class="container-fluid">
                     
     <!-- Navigation start -->
@@ -43,52 +42,144 @@
 <!-- <a class="navbar-brand" href="#">Quick Links</a>-->
     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav">
                     <div class="navlinks">
                         <li class="toplinks"><a href="#" class="nav-links">A-Z</a></li>     
                         <li class="toplinks"><a href="#" class="nav-links">Library</a></li>
                         <li class="toplinks"><a href="#" class="nav-links">Maps</a></li>
                         <li class="toplinks"><a href="#" class="nav-links">Current Students</a></li>
                         <li class="toplinks"><a href="#" class="nav-links">Faculty & Staff</a></li>
-                        <li class="toplinks-social"><a href="#" class="nav-links"><i class="fa fa-search"></i></a></li>
+                        <li class="toplinks"><a href="#" class="nav-links"><i class="fa fa-search"></i></a></li>
+                        <div class="socialmedia">
                         <li class="toplinks-social"><a href="#" class="nav-links"><i class="fa fa-twitter"></i></a></li>
                         <li class="toplinks-social"><a href="#" class="nav-links"><i class="fa fa-flickr"></i></a></li>
                         <li class="toplinks-social"><a href="#" class="nav-links"><i class="fa fa-facebook"></i></a></li>
                         <li class="toplinks-social"><a href="#" class="nav-links"><i class="fa fa-linkedin"></i></a></li>
                         <li class="toplinks-social"><a href="#" class="nav-links"><i class="fa fa-instagram"></i></a></li>
-                  </div></ul>
+                        </div>
+                    </div>
+                    </ul>
                     </div>
     </nav>
-                
                 <div class="row">
                 <div class="msudenver_logo"><a href="#"><img src="images/mainLogo.png" align="left"></a></div>
                 <div class="studenthub"><a href="#" class="nav-links">Student<br>Hub</a></div>
-                <div class="sectiontitle">Academic Success</div>
+                <div class="sectiontitle">Academic Success</div> 
                 </div>
-			</div></div>
+			</div>
+        </div>
         
     </div>
-    
     <!-- ENDS HEADER-->
     
     <!-- BEGINS BODY-->
-
     <div class="breadcrumbs">
             <div class="container">
-            <a href="#" class="breadcrumbs">Student Hub Home</a> / Academic Support
-        </div>
+            <a href="#" class="breadcrumbs">Student Hub Home</a> / Academic Support 
+            </div>
     </div>
         
+    <div class="body">
         <div class="container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="content-inner">
-        <h1>Page styles</h1>
-            
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a pretium est. Sed scelerisque, risus ut tempor lobortis, magna mauris dapibus neque, sit amet aliquam ipsum arcu quis felis. Donec venenatis placerat ex, eu fringilla tellus tempus non. Donec eu risus id nunc scelerisque varius. Pellentesque arcu nibh, tincidunt eu congue eget, venenatis eget urna. Cras porttitor tempor urna, non vehicula ipsum pharetra eget. Fusce non tincidunt lorem. Vestibulum eu tellus vitae magna lacinia viverra quis in sapien.</p>
+            <div class="presidentsheader">
+                    <div class="row">
+                        <div class="presidentstitle">Message from the President</div>
+                        <div class="messagedate">May 2015</div>
+                    </div>
+            </div>
+                    
+            <div class="messagearea">
+                <div class="col-lg-6" style="padding: 0px"><div class="presidentsmsgimg"></div></div>
+                <div class="col-lg-6" style="padding: 0px"><div class="whitearea">
+                    <div class="presidentsquote">"Colorado’s popularity as a destination and its lively food and lodging industry garnered a total of $17.3 billion in direct spending in 2013 and supported 150,600 jobs with earnings totaling morethan $4.7 billion. This industry, the second largest in the state, generated $976 million in 2013 local and state tax revenues."<hr>
+                    </div>
+                    <div class="readmore">Read more on <a href="#">“Transforming Colorado’s Advanced Manufacturing Workforce”</a> <i class="fa fa-chevron-right"></i></div>
+                    </div>          
+                </div>
+            </div>
+        </div>
+                
+<!-- INLINE STYLES FOR PRESIDENTS MESSAGE -->
 
-	<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="headings"></a>HEADINGS</h1>
-<hr />
+                <style>
+                .messagearea {
+                    width: 100%;
+                    height: 100%;
+                }
+                    
+                .presidentsheader {
+                    background-image: url("/images/quotation.png");
+                    background-size: 60px 60px;
+/*                    float: left;*/
+                    background-repeat: no-repeat;
+                    background-color: #f39c12;
+                    width: 100%;
+                    padding: 10px;
+                    height: 100%;
+                }
+    
+                .presidentstitle {
+                    color: #fff;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    float: left;
+                    padding-top: 5px;
+                    font-weight: 800;
+                }
+                    
+                .messagedate {
+                    color: #fff;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    float: right;
+                }
+
+                .presidentsmsgimg {
+                    height: 260px;
+                    width: 100%;
+                    background-image: url(/images/presidentmsg.png);
+                    background-repeat: no-repeat;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                    
+                }
+   
+                .whitearea {
+                    background: #fff;
+                    padding: 10px;
+/*                    width: 50%;*/
+/*                    float: right;*/
+                }
+                    
+                .presidentsquote {
+                    font-style: italic;
+                    font-size: 18px;
+                    padding-top: 5px;
+                    color: #216c87;
+                }
+                    
+                .readmore {
+                    padding-top: 0px;
+                    padding-bottom: 10px;
+
+                    float: right;
+                }
+                    
+                </style>
+            
+<!-- PAGE STYLES BEGIN --> 
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h1>Page styles</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a pretium est. Sed scelerisque, risus ut tempor lobortis, magna mauris dapibus neque, sit amet aliquam ipsum arcu quis felis. Donec venenatis placerat ex, eu fringilla tellus tempus non. Donec eu risus id nunc scelerisque varius. Pellentesque arcu nibh, tincidunt eu congue eget, venenatis eget urna. Cras porttitor tempor urna, non vehicula ipsum pharetra eget. Fusce non tincidunt lorem. Vestibulum eu tellus vitae magna lacinia viverra quis in sapien.</p>
+        
+<!-- HEADINGS -->        
+<h1>HEADINGS</h1>
+
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
@@ -96,9 +187,9 @@
 <h5>Heading 5</h5>
 <h6>Heading 6</h6>
 
-<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="lists"></a>LISTS</h1>
-<hr />
+<!-- LISTS -->     
+<h1>LISTS</h1>
+
 <div class="row">
 <div class="col-lg-6">
 <p><strong>Unordered List</strong> <span class="fa-stack fa-lg"> <em class="fa fa-square fa-stack-2x">&nbsp;</em> <em class="fa fa-list-ul fa-stack-1x fa-inverse">&nbsp;</em> </span></p>
@@ -124,17 +215,16 @@
 <li>List Item #7</li>
 </ol></div>
 </div>
+        
+<!-- BLOCKQUOTE -->
+<h1>BLOCKQUOTE</h1>
 
-<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="blockquote"></a>BLOCKQUOTE</h1>
-<hr />
 <blockquote>
 <p><span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis urna aliquam elit lacinia ultrices. Nulla non velit a odio lobortis bibendum. Vivamus euismod massa id enim aliquet mattis. Suspendisse potenti. Mauris et nibh et nisl tempus gravida. Sed ipsum nunc, commodo non ultrices et, placerat vel odio. Nullam magna turpis, facilisis eu mauris non, tincidunt pellentesque arcu. Duis lorem nibh, tincidunt vulputate aliquam aliquet, condimentum et nisl."</span></p>
 </blockquote>
 
-<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="alignment"></a>ALIGNMENT</h1>
-<hr />
+<!-- ALIGNMENT -->
+<h1>ALIGNMENT</h1>
 <div class="row">
 <div class="col-lg-3">
 <p><strong>Left</strong> <span class="fa-stack fa-lg"> <em class="fa fa-square fa-stack-2x">&nbsp;</em> <em class="fa fa-align-left fa-stack-1x fa-inverse">&nbsp;</em> </span></p>
@@ -153,64 +243,27 @@
 <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis urna aliquam elit lacinia ultrices. Nulla non velit a odio lobortis bibendum. Vivamus euismod massa id enim aliquet mattis. Suspendisse potenti. Mauris et nibh et nisl tempus gravida. Sed ipsum nunc, commodo non ultrices et, placerat vel odio.</p>
 </div>
 </div>
-<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="textStyles"></a>TEXT STYLES</h1>
-<hr />
-<!--
-<div class="row" style="text-align: center; font-size: 24px;">
-<div class="col-lg-4"><strong>BOLD</strong></div>
-<div class="col-lg-4"><em>ITALIC</em></div>
-<div class="col-lg-4"><span style="text-decoration: underline;">UNDERLINED</span></div>
-</div>
-<p>&nbsp;</p>
-<div class="row" style="text-align: center; font-size: 24px;">
-<div class="col-lg-6">Lorem<sub>SubScript</sub> dolor sit amet</div>
-<div class="col-lg-6">Lorem<sup>SuperScript</sup> dolor sit amet</div>
-</div>
--->
-            
+
+<!-- TYPOGRAPHY -->
+<h1>TEXT STYLES</h1>   
 <div class="row" style="text-align: center;">
-<br><a href="">This is a link.</a>
+<br><a href="#">This is a link.</a>
 <br><strong>This is bolded text.</strong>
 <br><em>This is italics.</em>
 <br>This is body copy.
 <br><u>This is underlined text.</u>
 <h1>This is a page header.</h1>
 </div>
-<p>&nbsp;</p>
-    <br>
 </div>
-</div>
-<!-- MGW 06-26-15 -->
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<div class="content-inner">
-	
-	
-	<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="tables"></a>TABLES</h1>
-<hr />
-    <br>
-</div>
-</div>
-<!-- MGW 06-26-15 -->
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<div class="content-inner">
-	
-	
-	<div class="row">
-
-        
-</div>
-    <br>
-</div>
-</div>
-<!-- MGW 06-26-15 -->
+      
+<!-- TABLES -->
+<h1>TABLES</h1>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="content-inner">
     
 <h4>MSU Denver Web Team @ Marketing & Communications</h4>
-<hr>
 
+<div class="table-responsive">
 <table class="table table-hover">
       <thead>
         <tr>
@@ -259,7 +312,8 @@
           
           
       </tbody>
-    </table>    
+    </table>  
+    </div>
     
     <table class="table">
       <thead>
@@ -364,10 +418,9 @@
     
 <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
 <div class="content-inner">
-    
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="tables"></a>Forms</h1>
-<hr />
 
+<!-- FORMS -->
+<h1>Forms</h1>
 <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -390,14 +443,11 @@
 </div>
 </div>
 
+<!-- SOCIAL LINKS -->
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="content-inner">
-	<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="social"></a>SOCIAL LINKS</h1>
-<hr />
-    <br>
-</div>
-</div>
+<h1>SOCIAL LINKS</h1>
+            
 <div align="center">
     <div class="social-links">
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -407,18 +457,14 @@
                             <a href="#"><i class="fa fa-instagram"></i></a>
     </div>
 </div>
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<div class="content-inner">
-	
-	
-	<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="facebook"></a>FACEBOOK FEED</h1>
-<hr />
-    <br>
 </div>
 </div>
+
+<!-- FACEBOOK FEED -->
+
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 centered">
-    <div class="content-inner">
+<div class="content-inner">
+    <h1>FACEBOOK FEED</h1>
 <style>
         #fb-root {
                 display: none;
@@ -428,6 +474,7 @@
                 height: 450px;
                 }
 </style>
+        
 <!--Facebook Script-->
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
@@ -438,23 +485,16 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 
-
-<!--Facebook Feed-->
-
 <div class="fb-like-box" data-href="https://www.facebook.com/MSUDenverAlumni" data-width="330" data-show-faces="false" data-stream="true" data-show-border="true" data-header="true"></div>
-    </div></div>
-<!-- MGW 06-26-15 -->
+</div></div>
+
+<!-- HIGHLIGHT BOX -->            
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="content-inner">
-	
-	
-	<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="highlight"></a>HIGHLIGHT BOX</h1>
-<hr />
-    <br>
+<h1>HIGHLIGHT BOX</h1>
 </div>
 </div>
-<!-- HiglightBox text/shtml -->
+    
 <div class="col-xs-12">
 <div class="HighlightBox">
 	<div class="HighlightBox-title">
@@ -465,20 +505,14 @@
 		<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec eros vel augue hendrerit ultrices et vitae lorem. Cras dignissim rhoncus sapien vel mattis. Curabitur a lacinia nisl. Etiam id nisi quis purus gravida suscipit. Donec porta leo risus, sed elementum lectus pharetra sed. Vestibulum volutpat sem nec sodales commodo. Suspendisse potenti. Aliquam pharetra mauris nunc, vel ullamcorper massa congue eu. Nulla eu faucibus purus, vel congue urna. Maecenas quis lectus tristique, pellentesque sem eget, lobortis felis. Pellentesque et felis dui. Suspendisse sapien justo, scelerisque in tristique sed, congue non elit. Pellentesque vitae tincidunt quam.</span></p>
 	</div>
 </div>
-</div><!-- MGW 06-26-15 -->
-
-<!-- MGW 06-26-15 -->
+</div>
+            
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="content-inner">
-	
-	
-	<hr />
 <h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="content"></a>PAGE CONTENT</h1>
-<hr />
-    <br>
 </div>
 </div>
-<!-- MGW 06-26-15 -->
+
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="content-inner">
 	
@@ -489,18 +523,10 @@
     <br>
 </div>
 </div>
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<div class="content-inner">
-	
-	
-	<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="collapse"></a>SLIDE DOWN CONTENT</h1>
-<hr />
-    <br>
-</div>
-</div>
-<!-- Edited by MGW 06-26-15  -->
+
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="content-inner">
+<h1>SLIDE DOWN CONTENT</h1>
         <div class="panel-group">
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -520,20 +546,15 @@
                 </div>
 
             </div>
+            </div>
         </div>
-    </div><!-- MGW 06-26-15 -->
-<!-- MGW 06-26-15 -->
+    </div>
+
+<!-- VIDEO -->   
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <div class="content-inner">
-	
-	
-	<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="youtube"></a>VIDEO</h1>
-<hr />
-    <br>
-</div>
-</div>
-<!-- Edited by MGW 05-06-14  -->
+<h1>VIDEO</h1>
+
 <style>
     .full-video iframe {
         width: 100%;
@@ -542,168 +563,89 @@
     }  
   
 </style>
-<div class="row">
+    <div class="row">
     <div class="full-video col-lg-12 col-md-12 col-sm-12 col-xm-12">
         <iframe src="https://player.vimeo.com/video/125155743" width="1280" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
-</div><!-- MGW 06-26-15 -->
-<!-- MGW 06-26-15 -->
+    </div>
+    </div>
+</div>
+
+<!-- BUTTONS -->            
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<div class="content-inner">
-	
-	
-	<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="buttons"></a>BUTTONS</h1>
-<hr />
-    <br>
-</div>
-</div>
-<!-- shtml -->
-<!--
-<div class="col-lg-6  col-sm-12 col-xs-12">
-<a role="button" class="btn btn-lg custombtn alizarin" href="/showcase/">
-<span><i class="fa fa-check-square"></i>&nbsp;&nbsp;Half Width Button
-</span>
-</a></div> shtml 
--->
-<!--
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-<a role="button" class="btn btn-lg custombtn carrot" href="/showcase/">
-<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;Half Width Button
-</span>
-</a></div> shtml 
--->
-            
-<!--
-<div class="col-lg-6  col-sm-12 col-xs-12">
-<a role="button" class="btn btn-lg custombtn greensea" href="/showcase/">
-<span><i class="fa fa-check-square"></i>&nbsp;&nbsp;Half Width Button
-</span>
-</a></div> shtml 
--->
-<!--
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-<a role="button" class="btn btn-lg custombtn emerald" href="/showcase/">
-<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;Half Width Button
-</span>
-</a></div> shtml 
--->
-            
-<!--
-<div class="col-lg-6  col-sm-12 col-xs-12">
-<a role="button" class="btn btn-lg custombtn nephritis" href="/showcase/">
-<span><i class="fa fa-check-square"></i>&nbsp;&nbsp;Half Width Button
-</span>
-</a></div> shtml 
--->
+    <div class="content-inner">
+<h1>BUTTONS</h1>
+
 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 <a role="button" class="btn btn-lg custombtn peterriver" href="/showcase/">
 <span><i class="fa fa-envelope"></i>&nbsp;&nbsp;Half Width Button
 </span>
-</a></div><!-- shtml -->
+</a></div>
             
 <div class="col-lg-6  col-sm-12 col-xs-12">
 <a role="button" class="btn btn-lg custombtn belizehole" href="/showcase/">
 <span><i class="fa fa-check-square"></i>&nbsp;&nbsp;Half Width Button
 </span>
-</a></div><!-- shtml -->
+</a></div>
             
-<!--
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-<a role="button" class="btn btn-lg custombtn amethyst" href="/showcase/">
-<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;Half Width Button
-</span>
-</a></div> shtml 
--->
-            
-<!--
-<div class="col-lg-6  col-sm-12 col-xs-12">
-<a role="button" class="btn btn-lg custombtn wisteria" href="/showcase/">
-<span><i class="fa fa-check-square"></i>&nbsp;&nbsp;Half Width Button
-</span>
-</a></div> shtml 
--->
 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 <a role="button" class="btn btn-lg custombtn wetasphalt" href="/showcase/">
 <span><i class="fa fa-envelope"></i>&nbsp;&nbsp;Half Width Button
 </span>
-</a></div><!-- shtml -->
+</a></div>
             
 <div class="col-lg-6  col-sm-12 col-xs-12">
 <a role="button" class="btn btn-lg custombtn midnightblue" href="/showcase/">
 <span><i class="fa fa-check-square"></i>&nbsp;&nbsp;Half Width Button
 </span>
-</a></div><!-- shtml -->
-<!--
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-<a role="button" class="btn btn-lg custombtn sunflower" href="/showcase/">
-<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;Half Width Button
-</span>
-</a></div> shtml 
--->
+</a></div>
             
-<!--
-<div class="col-lg-6  col-sm-12 col-xs-12">
-<a role="button" class="btn btn-lg custombtn orange" href="/showcase/">
-<span><i class="fa fa-check-square"></i>&nbsp;&nbsp;Half Width Button
-</span>
-</a></div> shtml 
--->
-<!--
-<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-<a role="button" class="btn btn-lg custombtn pumpkin" href="/showcase/">
-<span><i class="fa fa-envelope"></i>&nbsp;&nbsp;Half Width Button
-</span>
-</a></div> shtml 
--->
-
-<!--
-<div class="col-lg-6  col-sm-12 col-xs-12">
-<a role="button" class="btn btn-lg custombtn pomegranate" href="/showcase/">
-<span><i class="fa fa-check-square"></i>&nbsp;&nbsp;Half Width Button
-</span>
-</a></div> shtml 
--->
 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 <a role="button" class="btn btn-lg custombtn clouds" href="/showcase/">
 <span><i class="fa fa-envelope"></i>&nbsp;&nbsp;Half Width Button
 </span>
-</a></div><!-- shtml -->
+</a></div>
             
 <div class="col-lg-6  col-sm-12 col-xs-12">
 <a role="button" class="btn btn-lg custombtn rowdyred" href="/showcase/">
 <span><i class="fa fa-check-square"></i>&nbsp;&nbsp;Half Width Button
 </span>
-</a></div><!-- shtml -->
+</a></div>
 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 <a role="button" class="btn btn-lg custombtn rowdygray" href="/showcase/">
 <span><i class="fa fa-envelope"></i>&nbsp;&nbsp;Half Width Button
 </span>
-</a></div><!-- shtml -->
+    </a></div>
             
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <a role="button" class="btn btn-lg custombtn rowdyblue" href="/showcase/">
 <span><i class="fa fa-pencil"></i>&nbsp;&nbsp;Full Width Button
 </span>
-</a></div><!-- MGW 06-26-15 -->
-<!-- MGW 06-26-15 -->
+</a></div>
+
+    </div>
+</div>
+            
+<!-- INFO PANE -->
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<div class="content-inner">
-	
-	<hr />
-<h1 style="padding-left: 0px !important; margin-left: 0px !important;"><a id="pane"></a>INFO PANE</h1>
-<hr />
-    <br>
+    <div class="content-inner">
+        <h1>INFO PANE</h1>
+    </div>
 </div>
-</div>
+            
 <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+    <div class="content-inner">
+
   <div class="panel panel-default clickable" data-href="/showcase/">
   <div class="panel-heading">Info Pane 1</div>
     <div style="height: 100%; overflow:hidden; "class="panel-body">
       <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla lobortis massa sed lobortis. Cras felis enim, laoreet sit amet urna nec, adipiscing mollis est. Aliquam erat volutpat. Nunc dapibus ipsum diam, at rhoncus ligula interdum sit amet. Nam scelerisque felis mi. Donec auctor magna at neque faucibus commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac.</span></p>
     </div>
   </div>
-</div><div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+
+</div></div>
+            
+<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
   <div class="panel panel-default clickable" data-href="/showcase/">
   <div class="panel-heading">Info Pane 2</div>
     <div style="height: 100%; overflow:hidden; "class="panel-body">
@@ -712,40 +654,52 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla lobortis massa sed lobortis. Cras felis enim, laoreet sit amet urna nec, adipiscing mollis est. Aliquam erat volutpat. Nunc dapibus ipsum diam, at rhoncus ligula interdum sit amet.</p>
     </div>
   </div>
-</div><div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+</div>
+            
+<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
   <div class="panel panel-default clickable" data-href="/showcase/">
   <div class="panel-heading">Info Pane 3</div>
     <div style="height: 100%; overflow:hidden; "class="panel-body">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla lobortis massa sed lobortis. Cras felis enim, laoreet sit amet urna nec, adipiscing mollis est. Aliquam erat volutpat. Nunc dapibus ipsum diam, at rhoncus ligula interdum sit amet. Nam scelerisque felis mi. Donec auctor magna at neque faucibus commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac.</p>
     </div>
   </div>
-</div><!-- MGW 06-26-15 -->
-        
+</div>
  						<!-- *********************************  -->
                         <!-- SITEMANAGER START FOOTER -->
                         <!-- *********************************  -->
-</div>
+        </div></div>
+    
+    
+
     
     <!-- ENDS BODY-->
     
     <!-- BEGINS FOOTER-->
-<!--    <div class="container-fluid">-->
     <footer class="bg-dark">
 				<div class="row">
 	<div class="container">
-					<div class="col-sm-6">
+					<div class="col-sm-4">
 						<p class="footer">
                             <strong>© Metropolitan State University of Denver</strong>
                             <br><a href="#" class="nav-links">College Portrait Privacy Statement</a>
-                            | <a href="#" class="nav-links">Colorado TOPS </p></p>
+                            <br><a href="#" class="nav-links">Colorado TOPS </p></p>
 					</div>
                     
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
 						<p class="footer">
                             <a href="#" class="nav-links">CONTACT US</a> | 303-556-5740 
                             <br>Auraria Campus Police: 303-556-5000 
                             <br>Inclement Weather Line: 303-556-2401</p>
 					</div>
+
+        
+                            <div class="col-sm-4">
+						<p class="footer">
+                            <a href="#" class="nav-links">Campus Link #1</a>
+                            <br><a href="#" class="nav-links">Metropolitan State University of Denver</a> 
+                            <br><a href="#" class="nav-links">Metropolitan State University of Denver</a></p>
+					</div>
+	
 				</div>
 	
 			</div>
@@ -761,9 +715,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/javascripts/bootstrap.min.js"></script>
-    <t4 type="media" id="95575"/><!--bootstrap.min.js"-->      
 	<script src="js/custom.js"></script>
-    <t4 type="media" id="95574"/><!--adspace.js-->    
 
 </body>
 </html>
