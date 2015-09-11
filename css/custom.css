@@ -8,6 +8,34 @@ body.home {
   font-weight: 400;
 }
 
+body.home footer {
+  padding: 10px 0;
+}
+
+body.home footer .bg-dark {
+  background: #111111;
+}
+
+body.home footer .copyright {
+  margin: 0;
+}
+
+body.home footer .font-alt {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1f4d69;
+}
+
+body.home footer .footer-social-links {
+  text-align: right;
+}
+
+body.home footer .footer-social-links a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 0 6px;
+}
+
 body.home section {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -394,34 +422,6 @@ body.home .module-small [class*="col-"] {
 
 .widget-posts-body {
   margin-left: 74px;
-}
-
-footer {
-  padding: 10px 0;
-}
-
-footer .bg-dark {
-  background: #111111;
-}
-
-footer .copyright {
-  margin: 0;
-}
-
-footer .font-alt {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #1f4d69;
-}
-
-footer .footer-social-links {
-  text-align: right;
-}
-
-footer .footer-social-links a {
-  color: #ffffff;
-  display: inline-block;
-  padding: 0 6px;
 }
 
 .bg-dark, .bg-dark-30, .bg-dark-60, .bg-dark-90, .bg-dark .module-title, .bg-dark-30 .module-title, .bg-dark-60 .module-title, .bg-dark-90 .module-title, .bg-dark .module-subtitle, .bg-dark-30 .module-subtitle, .bg-dark-60 .module-subtitle, .bg-dark-90 .module-subtitle, .bg-dark .alt-module-subtitle h5, .bg-dark-30 .alt-module-subtitle h5, .bg-dark-60 .alt-module-subtitle h5, .bg-dark-90 .alt-module-subtitle h5 {
