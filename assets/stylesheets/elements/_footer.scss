@@ -1,4 +1,7 @@
+/* footer */
+
 footer {
+    margin-top: 15px;
     padding: 10px 0;
     .bg-dark {
         background: #111111;
@@ -19,4 +22,45 @@ footer {
             padding: 0 6px;
         }
     }
+}
+
+
+
+
+
+.footer {
+	padding: 10px 10px 10px 10px;
+    color: white;
+}
+
+a.footer {
+    color: #fff;
+}
+
+
+.copyright {
+	margin: 0;
+}
+
+.footer-social-links {
+	text-align: right;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.footer-social-links a {
+	display: inline-block;
+	padding: 0 6px;
+    
+}
+
+.bg-dark {
+    background: #111;
+}
+
+
+.social-links {
+    font-size: 250%;
+    letter-spacing: 10px;
+
 }
