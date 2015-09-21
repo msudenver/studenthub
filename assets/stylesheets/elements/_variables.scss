@@ -17,3 +17,8 @@ $purple: #8e44ad;
 $purple-border: #66008e;
 $purple-trans:rgba(102, 0, 142, 0.75);
 $font: 'Lato', sans-serif;
+// Mixins
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
